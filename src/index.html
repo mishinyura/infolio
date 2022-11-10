@@ -5,8 +5,377 @@
 })
 <body>
 @@include('html/header.html',{})
-  <main>
-
+  <main class="main">
+    <article class="main__container">
+      <aside class="main__left-menu sidebar"></aside>
+      <article class="main__content">
+        <section class="main__section sorted">
+          <div class="sorted__control">
+            <div class="sorted__menu">
+              <span class="sorted__title">
+                Сортировать по:
+              </span>
+              <ul class="sorted__list">
+                <li class="sorted__item sort-active">
+                  Популярности
+                </li>
+                <li class="sorted__item">
+                  Рейтингу
+                </li>
+                <li class="sorted__item">
+                  Цене
+                </li>
+                <li class="sorted__item">
+                  Обновлению
+                </li>
+                <li class="sorted__item">
+                  Сначала выгодные
+                </li>
+              </ul>
+            </div>
+            <div class="sorted__btns">
+              <button class="sorted__view sorted__view_4 view-active">
+                <svg width="18" height="18">
+                  <circle r="2.5" cx="15" cy="15" />
+                  <circle r="2.5" cx="9" cy="15" />
+                  <circle r="2.5" cx="3" cy="15" />
+                  <circle r="2.5" cx="15" cy="9" />
+                  <circle r="2.5" cx="9" cy="9" />
+                  <circle r="2.5" cx="3" cy="9" />
+                  <circle r="2.5" cx="15" cy="3" />
+                  <circle r="2.5" cx="9" cy="3" />
+                  <circle r="2.5" cx="3" cy="3" />
+                </svg>
+              </button>
+              <button class="sorted__view sorted__view_3">
+                <svg width="18" height="18">
+                  <circle r="4" cx="14" cy="14" />
+                  <circle r="4" cx="4" cy="14" />
+                  <circle r="4" cx="14" cy="4" />
+                  <circle r="4" cx="4" cy="4" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <ul class="sorted__tags">
+            <li class="sorted__tag">
+              Ежедневные
+            </li>
+          </ul>
+        </section>
+        <section class="main__section showcase">
+          <ul class="showcase__list">
+            <li class="showcase__item card">
+              <div class="card__content">
+                <picture class="card__pictures">
+                  <img src="./img/1.png" alt="">
+                  <img src="./img/1.1.png" alt="">
+                  <img src="./img/1.2.png" alt="">
+                  <img src="./img/1.3.png" alt="">
+                  <img src="./img/01.png" alt="">
+                  <img src="./img/02.png" alt="">
+                  <img src="./img/03.png" alt="">
+                  <img src="./img/04.png" alt="">
+                </picture>
+                <div class="card__prices">
+                  <span class="card__price card__price_new">
+                    999 ₽
+                  </span>
+                  <span class="card__price card__price_old">
+                    1999 ₽
+                  </span>
+                </div>
+                <p class="card__descr">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Itaque inventore consequuntur repellendus nostrum eum
+                </p>
+                <ul class="card__rating">
+                  <li class="card__star card__star_y">
+                    <svg width="16" height="16">
+                      <path d='M 7 0 L 5 5 L 0 5 L 4 8 L 2 13 L 7 10 L 12 13 L 10 8 L 14 5 L 9 5'/>
+                    </svg>
+                  </li>
+                  <li class="card__star">
+                    <svg width="16" height="16">
+                      <path d='M 7 0 L 5 5 L 0 5 L 4 8 L 2 13 L 7 10 L 12 13 L 10 8 L 14 5 L 9 5'/>
+                    </svg>
+                  </li>
+                  <li class="card__star">
+                    <svg width="16" height="16">
+                      <path d='M 7 0 L 5 5 L 0 5 L 4 8 L 2 13 L 7 10 L 12 13 L 10 8 L 14 5 L 9 5'/>
+                    </svg>
+                  </li>
+                  <li class="card__star">
+                    <svg width="16" height="16">
+                      <path d='M 7 0 L 5 5 L 0 5 L 4 8 L 2 13 L 7 10 L 12 13 L 10 8 L 14 5 L 9 5'/>
+                    </svg>
+                  </li>
+                  <li class="card__star">
+                    <svg width="16" height="16">
+                      <path d='M 7 0 L 5 5 L 0 5 L 4 8 L 2 13 L 7 10 L 12 13 L 10 8 L 14 5 L 9 5'/>
+                    </svg>
+                  </li>
+                  <li class="card__count">33</li>
+                </ul>
+                <p class="card__delivery">
+                  Доставка <span>завтра</span>
+                </p>
+              </div>
+              <div class="card__btns">
+                <button class="card__btn">
+                  В корзину
+                </button>
+              </div>
+            </li>
+            <li class="showcase__item card">
+              <div class="card__content">
+                <picture class="card__pictures">
+                  <img src="./img/2.png" alt="">
+                  <img src="./img/2.1.png" alt="">
+                  <img src="./img/2.2.png" alt="">
+                  <img src="./img/2.3.png" alt="">
+                  <img src="./img/01.png" alt="">
+                  <img src="./img/02.png" alt="">
+                  <img src="./img/03.png" alt="">
+                  <img src="./img/04.png" alt="">
+                </picture>
+                <div class="card__prices">
+                  <span class="card__price card__price_new">
+                    999 ₽
+                  </span>
+                  <span class="card__price card__price_old">
+                    1999 ₽
+                  </span>
+                </div>
+                <p class="card__descr">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Itaque inventore consequuntur repellendus nostrum eum
+                </p>
+                <ul class="card__rating">
+                  <li class="card__star">
+                    <svg width="16" height="16">
+                      <path d='M 7 0 L 5 5 L 0 5 L 4 8 L 2 13 L 7 10 L 12 13 L 10 8 L 14 5 L 9 5'/>
+                    </svg>
+                  </li>
+                  <li class="card__star">
+                    <svg width="16" height="16">
+                      <path d='M 7 0 L 5 5 L 0 5 L 4 8 L 2 13 L 7 10 L 12 13 L 10 8 L 14 5 L 9 5'/>
+                    </svg>
+                  </li>
+                  <li class="card__star">
+                    <svg width="16" height="16">
+                      <path d='M 7 0 L 5 5 L 0 5 L 4 8 L 2 13 L 7 10 L 12 13 L 10 8 L 14 5 L 9 5'/>
+                    </svg>
+                  </li>
+                  <li class="card__star">
+                    <svg width="16" height="16">
+                      <path d='M 7 0 L 5 5 L 0 5 L 4 8 L 2 13 L 7 10 L 12 13 L 10 8 L 14 5 L 9 5'/>
+                    </svg>
+                  </li>
+                  <li class="card__star">
+                    <svg width="16" height="16">
+                      <path d='M 7 0 L 5 5 L 0 5 L 4 8 L 2 13 L 7 10 L 12 13 L 10 8 L 14 5 L 9 5'/>
+                    </svg>
+                  </li>
+                  <li class="card__count">33</li>
+                </ul>
+                <p class="card__delivery">
+                  Доставка <span>завтра</span>
+                </p>
+              </div>
+              <div class="card__btns">
+                <button class="card__btn">
+                  В корзину
+                </button>
+              </div>
+            </li>
+            <li class="showcase__item card">
+              <div class="card__content">
+                <picture class="card__pictures">
+                  <img src="./img/3.png" alt="">
+                  <img src="./img/3.1.png" alt="">
+                  <img src="./img/3.2.png" alt="">
+                  <img src="./img/01.png" alt="">
+                  <img src="./img/02.png" alt="">
+                  <img src="./img/03.png" alt="">
+                  <img src="./img/04.png" alt="">
+                </picture>
+                <div class="card__prices">
+                  <span class="card__price card__price_new">
+                    999 ₽
+                  </span>
+                  <span class="card__price card__price_old">
+                    1999 ₽
+                  </span>
+                </div>
+                <p class="card__descr">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Itaque inventore consequuntur repellendus nostrum eum
+                </p>
+                <ul class="card__rating">
+                  <li class="card__star">
+                    <svg width="16" height="16">
+                      <path d='M 7 0 L 5 5 L 0 5 L 4 8 L 2 13 L 7 10 L 12 13 L 10 8 L 14 5 L 9 5'/>
+                    </svg>
+                  </li>
+                  <li class="card__star">
+                    <svg width="16" height="16">
+                      <path d='M 7 0 L 5 5 L 0 5 L 4 8 L 2 13 L 7 10 L 12 13 L 10 8 L 14 5 L 9 5'/>
+                    </svg>
+                  </li>
+                  <li class="card__star">
+                    <svg width="16" height="16">
+                      <path d='M 7 0 L 5 5 L 0 5 L 4 8 L 2 13 L 7 10 L 12 13 L 10 8 L 14 5 L 9 5'/>
+                    </svg>
+                  </li>
+                  <li class="card__star">
+                    <svg width="16" height="16">
+                      <path d='M 7 0 L 5 5 L 0 5 L 4 8 L 2 13 L 7 10 L 12 13 L 10 8 L 14 5 L 9 5'/>
+                    </svg>
+                  </li>
+                  <li class="card__star">
+                    <svg width="16" height="16">
+                      <path d='M 7 0 L 5 5 L 0 5 L 4 8 L 2 13 L 7 10 L 12 13 L 10 8 L 14 5 L 9 5'/>
+                    </svg>
+                  </li>
+                  <li class="card__count">33</li>
+                </ul>
+                <p class="card__delivery">
+                  Доставка <span>завтра</span>
+                </p>
+              </div>
+              <div class="card__btns">
+                <button class="card__btn">
+                  В корзину
+                </button>
+              </div>
+            </li>
+            <li class="showcase__item card">
+              <div class="card__content">
+                <picture class="card__pictures">
+                  <img src="./img/4.png" alt="">
+                  <img src="./img/4.1.png" alt="">
+                  <img src="./img/4.2.png" alt="">
+                  <img src="./img/01.png" alt="">
+                  <img src="./img/02.png" alt="">
+                  <img src="./img/03.png" alt="">
+                  <img src="./img/04.png" alt="">
+                </picture>
+                <div class="card__prices">
+                  <span class="card__price card__price_new">
+                    999 ₽
+                  </span>
+                  <span class="card__price card__price_old">
+                    1999 ₽
+                  </span>
+                </div>
+                <p class="card__descr">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Itaque inventore consequuntur repellendus nostrum eum
+                </p>
+                <ul class="card__rating">
+                  <li class="card__star">
+                    <svg width="16" height="16">
+                      <path d='M 7 0 L 5 5 L 0 5 L 4 8 L 2 13 L 7 10 L 12 13 L 10 8 L 14 5 L 9 5'/>
+                    </svg>
+                  </li>
+                  <li class="card__star">
+                    <svg width="16" height="16">
+                      <path d='M 7 0 L 5 5 L 0 5 L 4 8 L 2 13 L 7 10 L 12 13 L 10 8 L 14 5 L 9 5'/>
+                    </svg>
+                  </li>
+                  <li class="card__star">
+                    <svg width="16" height="16">
+                      <path d='M 7 0 L 5 5 L 0 5 L 4 8 L 2 13 L 7 10 L 12 13 L 10 8 L 14 5 L 9 5'/>
+                    </svg>
+                  </li>
+                  <li class="card__star">
+                    <svg width="16" height="16">
+                      <path d='M 7 0 L 5 5 L 0 5 L 4 8 L 2 13 L 7 10 L 12 13 L 10 8 L 14 5 L 9 5'/>
+                    </svg>
+                  </li>
+                  <li class="card__star">
+                    <svg width="16" height="16">
+                      <path d='M 7 0 L 5 5 L 0 5 L 4 8 L 2 13 L 7 10 L 12 13 L 10 8 L 14 5 L 9 5'/>
+                    </svg>
+                  </li>
+                  <li class="card__count">33</li>
+                </ul>
+                <p class="card__delivery">
+                  Доставка <span>завтра</span>
+                </p>
+              </div>
+              <div class="card__btns">
+                <button class="card__btn">
+                  В корзину
+                </button>
+              </div>
+            </li>
+            <li class="showcase__item card">
+              <div class="card__content">
+                <picture class="card__pictures">
+                  <img src="./img/4.png" alt="">
+                  <img src="./img/4.1.png" alt="">
+                  <img src="./img/4.2.png" alt="">
+                  <img src="./img/01.png" alt="">
+                  <img src="./img/02.png" alt="">
+                  <img src="./img/03.png" alt="">
+                  <img src="./img/04.png" alt="">
+                </picture>
+                <div class="card__prices">
+                  <span class="card__price card__price_new">
+                    999 ₽
+                  </span>
+                  <span class="card__price card__price_old">
+                    1999 ₽
+                  </span>
+                </div>
+                <p class="card__descr">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Itaque inventore consequuntur repellendus nostrum eum
+                </p>
+                <ul class="card__rating">
+                  <li class="card__star">
+                    <svg width="16" height="16">
+                      <path d='M 7 0 L 5 5 L 0 5 L 4 8 L 2 13 L 7 10 L 12 13 L 10 8 L 14 5 L 9 5'/>
+                    </svg>
+                  </li>
+                  <li class="card__star">
+                    <svg width="16" height="16">
+                      <path d='M 7 0 L 5 5 L 0 5 L 4 8 L 2 13 L 7 10 L 12 13 L 10 8 L 14 5 L 9 5'/>
+                    </svg>
+                  </li>
+                  <li class="card__star">
+                    <svg width="16" height="16">
+                      <path d='M 7 0 L 5 5 L 0 5 L 4 8 L 2 13 L 7 10 L 12 13 L 10 8 L 14 5 L 9 5'/>
+                    </svg>
+                  </li>
+                  <li class="card__star">
+                    <svg width="16" height="16">
+                      <path d='M 7 0 L 5 5 L 0 5 L 4 8 L 2 13 L 7 10 L 12 13 L 10 8 L 14 5 L 9 5'/>
+                    </svg>
+                  </li>
+                  <li class="card__star">
+                    <svg width="16" height="16">
+                      <path d='M 7 0 L 5 5 L 0 5 L 4 8 L 2 13 L 7 10 L 12 13 L 10 8 L 14 5 L 9 5'/>
+                    </svg>
+                  </li>
+                  <li class="card__count">33</li>
+                </ul>
+                <p class="card__delivery">
+                  Доставка <span>завтра</span>
+                </p>
+              </div>
+              <div class="card__btns">
+                <button class="card__btn">
+                  В корзину
+                </button>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </article>
+    </article>
   </main>
 @@include('html/footer.html',{})
 </body>

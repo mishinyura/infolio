@@ -27,3 +27,7 @@ const swiperReasons = new Swiper('.reasons-block__slider', {
     prevEl: '.slider__button-prev',
   },
 });
+
+import './modules/burger.js';
+import './modules/editview.js';
+import './modules/previewCard.js';

@@ -19,7 +19,7 @@
 		"gulp-cli": "^2.3.0"
 	},
 	"engines": {
-		"node": "16"
+		"node": "18"
 	},
 	"devDependencies": {
 		"browser-sync": "latest",
