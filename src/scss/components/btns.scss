@@ -1,0 +1,74 @@
+.btn {
+  display: block;
+  border-radius: 80px;
+  text-align: center;
+
+  &--white {
+    color: $mainColor;
+    border: 2px solid $mainColor;
+    background: unset;
+    transition: $transitionHover;
+
+    &:hover {
+      color: #ABABAB;
+      border: 2px solid $mainColor;
+      background: $mainColor;
+      cursor: pointer;
+    }
+  }
+
+  &--red {
+    color: $redColor;
+    border: 2px solid $redColor;
+    background: unset;
+    transition: $transitionHover;
+
+    &:hover {
+      color: $mainColor;
+      border: 2px solid $redColor;
+      background: $redColor;
+      cursor: pointer;
+    }
+  }
+
+  &--large {
+    width: rem(350);
+    height: rem(58);
+
+    font-size: rem(28);
+    line-height: rem(40);
+
+    padding-top: rem(8);
+
+    @media (max-width: 768px) {
+      width: rem(209);
+      height: unset;
+
+      font-size: rem(18);
+      line-height: rem(40);
+
+      padding-top: 0;
+    }
+    @media (max-width: 768px) {
+      width: rem(183);
+    }
+  }
+
+  &--medium {
+    width: rem(256);
+    height: rem(45);
+
+    font-size: rem(24);
+    line-height: rem(40);
+  }
+
+  &--small {
+    width: rem(207);
+    height: rem(48);
+
+    font-size: rem(22);
+    line-height: rem(40);
+
+    padding-top: rem(4);
+  }
+}

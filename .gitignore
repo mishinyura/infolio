@@ -1,0 +1,21 @@
+# Файлы и папки операционной системы
+.DS_Store
+Thumbs.db
+
+# Файлы редактора
+.idea
+*.sublime*
+.vscode
+
+# Вспомогательные файлы
+*.log*
+node_modules/
+package-lock.json
+yarn.lock
+
+# Собранные файлы
+/dist
+HUB.zip
+
+# Версия редакции
+/gulp/version.json

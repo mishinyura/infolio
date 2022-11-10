@@ -1,0 +1,104 @@
+.close-modal {
+  position: absolute;
+  width: 49px;
+  height: 49px;
+  top: rem(12);
+  right: rem(20);
+  font-size: 50px;
+  color: #333;
+  cursor: pointer;
+  background: none;
+}
+
+.modal-reason {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: rem(825);
+
+  padding: rem(62);
+  z-index: 10;
+  background: linear-gradient(180deg, #CA1646 0%, #6B0921 100%);
+  box-shadow: 2px -1px 10px rgba(73, 0, 16, 0.2);
+  border-radius: 25px;
+
+  &__slider {
+    position: relative;
+  }
+
+  &__slide {
+
+    .slide {
+      margin-bottom: rem(20);
+
+      &__top {
+        display: flex;
+        margin-bottom: rem(35);
+      }
+
+      &__title {
+        width: rem(422);
+        font-size: rem(48);
+        line-height: rem(48);
+        margin-top: rem(35);
+        margin-left: rem(52);
+      }
+
+      &__text {
+        margin-bottom: rem(50);
+      }
+
+    }
+  }
+
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: -75px;
+    width: 100%;
+    z-index: 100;
+  }
+}
+
+.slider-navigation__next {
+
+  svg {
+    stroke: #fff;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.slider-navigation__prev {
+
+  svg {
+    stroke: #fff;
+    transform: rotate(180deg);
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.slider-navigation__prev.swiper-button-disabled,
+.slider-navigation__next.swiper-button-disabled {
+  svg {
+    stroke: $secondRedColor;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
