@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title":"Корзина"
+})
+<body>
+@@include('html/header.html',{})
+  <main class="main">
+    <article class="main__container">
+      <article class="main__content">
+        <section class="main__section products">
+          <h2 class="products__title">
+            Корзина
+          </h2>
+          <ul class="products__list">
+            <li class="products__item position">
+              <div class="position__descr">
+                <picture class="position__img">
+                  <img src="./img/1.png" alt="">
+                </picture>
+                <h3 class="position__name">
+                  Ежедневник датированный 2023 А5 176л, INFOLIO
+                </h3>
+                <p class="position__param">
+                  Цвет: светло-бежевый
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="main__section"></section>
+      </article>
+      <aside class="main__check"></aside>
+    </article>
+  </main>
+@@include('html/footer.html',{})
+</body>
+
+</html>

@@ -1,15 +1,22 @@
 .header{
-  position: absolute;
-  left: 0;
-  right: 0;
-  padding: 20px 0 40px;
+  padding: 20px 0 0;
   background-image: url(../img/header_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 
+  &::after{
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 30px 30px 0 0;
+    background-color: #fff;
+    content: '';
+  }
+
   &__container{
     display: flex;
     align-items: center;
+    margin-bottom: 30px;
   }
 
   .nav{
@@ -68,6 +75,7 @@
       height: 100vh;
       transition: $transTransform;
       z-index: 20;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.122);
 
       &.active-menu{
         left: 0;
@@ -77,11 +85,32 @@
     &__list{
       width: 320px;
       height: 100%;
+      padding: 20px 40px;
       background-color: #fff;
     }
 
+    &__item{
+      padding: 5px 5px;
+      border-radius: 10px;
+      transition: $transBg;
+      cursor: pointer;
+      &:not(:last-child){
+        margin-bottom: 10px;
+      }
+
+      &:hover{
+        background-color: #cb11ab;
+
+        & .nav__link{
+          color: #fff;
+        }
+      }
+    }
+
     &__link{
-      
+      font-size: 16px;
+      color: #242424;
+      transition: $transColor;
     }
 
     &__close{
@@ -153,10 +182,5 @@
     line-height: 20px;
     color: rgba(255,255,255,.6);
     transition: $transColor;
-  }
-
-  &__after{
-    width: 100%;
-    height: 100px;
   }
 }
