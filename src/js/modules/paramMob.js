@@ -1,8 +1,8 @@
-const navBurger = document.querySelector('.nav');
-const btnBurgerOpen = navBurger.querySelector('.nav__burger');
-const btnBurgerClose = navBurger.querySelector('.nav__close');
-const navMenu = navBurger.querySelector('.nav__menu');
-const classActiveBurger = 'active-menu';
+const navBurger = document.querySelector('.sidebar');
+const btnBurgerOpen = navBurger.querySelector('.sidebar__btn_mob');
+const btnBurgerClose = navBurger.querySelector('.sidebar__close');
+const navMenu = navBurger.querySelector('.sidebar__content');
+const classActiveBurger = 'active-param';
 const clickMenu = () => {
   navMenu.classList.toggle(classActiveBurger);
 };

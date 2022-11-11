@@ -173,6 +173,21 @@
     }
   }
 
+  &__count{
+    position: absolute;
+    right: 5px;
+    top: -5px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 1);
+    background-color: #cf2d00;
+  }
+
   &__icon{
     display: block;
   }

@@ -7,30 +7,51 @@
 @@include('html/header.html',{})
   <main class="main">
     <article class="main__container">
-      <aside class="main__left-menu sidebar"></aside>
+      <aside class="main__left-menu sidebar">
+        <button class="sidebar__btn_mob">
+          <svg width="20" heigth="20" fill="#D800DF">
+            <path d="M 2 6 L 10 6 C 11 8 13 8 14 6 L 18 6 C 19 6 19 4 18 4 L 14 4 C 13 2 11 2 10 4 L 2 4 C 1 4 1 6 2 6 M 10.66 4.996 A 1 1 0 0 1 13.313 4.989 A 1 1 0 0 1 10.66 4.996" />
+            <path d="M18 12 10 12C9 10 7 10 6 12L2 12C1 12 1 14 2 14L6 14C7 16 9 16 10 14L18 14C19 14 19 12 18 12M6.625 12.973A1 1 0 019.304 12.986 1 1 0 016.625 12.986" />
+          </svg>
+        </button>
+        <div class="sidebar__content">
+          <button class="sidebar__close"></button>
+          <input type="checkbox">
+          <input type="checkbox">
+          <input type="checkbox">
+          <input type="checkbox">
+        </div>
+      </aside>
       <article class="main__content">
         <section class="main__section sorted">
           <div class="sorted__control">
             <div class="sorted__menu">
+              <button class="sorted__title_mob">
+                По <span>популярности</span>
+                <svg width="8" height="8">
+                  <path d="M8 2 0 2 4 6 8 2" />
+                </svg>
+              </button>
               <span class="sorted__title">
                 Сортировать по:
               </span>
               <ul class="sorted__list">
                 <li class="sorted__item sort-active">
-                  Популярности
+                  популярности
                 </li>
                 <li class="sorted__item">
-                  Рейтингу
+                  рейтингу
+                </li>
+                <li class="sorted__item sorted__item_desk">
+                  цене
                 </li>
                 <li class="sorted__item">
-                  Цене
+                  обновлению
                 </li>
                 <li class="sorted__item">
-                  Обновлению
+                  сначала выгодные
                 </li>
-                <li class="sorted__item">
-                  Сначала выгодные
-                </li>
+                <li class="sorted__btn_mob">Готово</li>
               </ul>
             </div>
             <div class="sorted__btns">
@@ -66,6 +87,7 @@
         <section class="main__section showcase">
           <ul class="showcase__list">
             <li class="showcase__item card">
+              <span class="card__link"></span>
               <div class="card__content">
                 <picture class="card__pictures">
                   <img src="./img/1.png" alt="">
@@ -87,7 +109,6 @@
                 </div>
                 <p class="card__descr">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                  Itaque inventore consequuntur repellendus nostrum eum
                 </p>
                 <ul class="card__rating">
                   <li class="card__star card__star_y">
@@ -128,6 +149,7 @@
               </div>
             </li>
             <li class="showcase__item card">
+              <span class="card__link"></span>
               <div class="card__content">
                 <picture class="card__pictures">
                   <img src="./img/2.png" alt="">
@@ -149,7 +171,6 @@
                 </div>
                 <p class="card__descr">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                  Itaque inventore consequuntur repellendus nostrum eum
                 </p>
                 <ul class="card__rating">
                   <li class="card__star">
@@ -190,6 +211,7 @@
               </div>
             </li>
             <li class="showcase__item card">
+              <span class="card__link"></span>
               <div class="card__content">
                 <picture class="card__pictures">
                   <img src="./img/3.png" alt="">
@@ -210,7 +232,6 @@
                 </div>
                 <p class="card__descr">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                  Itaque inventore consequuntur repellendus nostrum eum
                 </p>
                 <ul class="card__rating">
                   <li class="card__star">
@@ -251,6 +272,7 @@
               </div>
             </li>
             <li class="showcase__item card">
+              <span class="card__link"></span>
               <div class="card__content">
                 <picture class="card__pictures">
                   <img src="./img/4.png" alt="">
@@ -271,7 +293,6 @@
                 </div>
                 <p class="card__descr">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                  Itaque inventore consequuntur repellendus nostrum eum
                 </p>
                 <ul class="card__rating">
                   <li class="card__star">
@@ -312,6 +333,7 @@
               </div>
             </li>
             <li class="showcase__item card">
+              <span class="card__link"></span>
               <div class="card__content">
                 <picture class="card__pictures">
                   <img src="./img/4.png" alt="">
@@ -332,7 +354,6 @@
                 </div>
                 <p class="card__descr">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                  Itaque inventore consequuntur repellendus nostrum eum
                 </p>
                 <ul class="card__rating">
                   <li class="card__star">

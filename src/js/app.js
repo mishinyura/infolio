@@ -28,6 +28,7 @@ const swiperReasons = new Swiper('.reasons-block__slider', {
   },
 });
 
-import './modules/burger.js';
+import './modules/paramMob.js';
 import './modules/editview.js';
 import './modules/previewCard.js';
+import './modules/sorted.js';
