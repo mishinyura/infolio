@@ -8,3 +8,4 @@ import './modules/paramMob.js';
 import './modules/editview.js';
 import './modules/previewCard.js';
 import './modules/sorted.js';
+import './modules/accordeon.js';
