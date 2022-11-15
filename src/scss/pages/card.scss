@@ -1,0 +1,283 @@
+.main{
+  &__container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.head{
+  flex-basis: 100%;
+}
+
+.achievement-block{
+  flex-basis: 43%;
+}
+
+.details{
+  flex-basis: 25%;
+  &__param{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+    &:nth-child(1){
+      justify-content: flex-start;
+    }
+  }
+
+  &__subtitle{
+    margin-bottom: 15px;
+  }
+
+  &__models{
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  &__link{
+    display: block;
+    width: 72px;
+    height: 96px;
+
+    & img{
+      width: 100%;
+    }
+
+    &:not(:last-child){
+      margin-right: 10px;
+    }
+  }
+
+  &__name{
+    flex-shrink: 0;
+    margin-right: 10px;
+    color: #8b8b8b;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+    & span {
+      padding-right: 10px;
+      background-color: #fff;
+      z-index: 2;
+    }
+
+    &_dashed{
+      position: relative;
+      display: flex;
+      flex-basis: 80%;
+      &::after{
+        position: absolute;
+        top: 60%;
+        width: 100%;
+        border-bottom: 1px dashed #8b8b8b;
+        content: '';
+      }
+    }
+  }
+
+  &__value{
+    flex-basis: 20%;
+    flex-shrink: 0;
+  }
+
+  &__detail{
+    display: inline-block;
+    margin-bottom: 30px;
+    border-bottom: 1px dashed rgba(139,139,139,.4);
+    font-size: 14px;
+    line-height: 20px;
+    color: #242424;
+    transition: color .1s linear,
+              border-color .1s linear;;
+
+    &:hover{
+      color: #cb11ab;
+      border-color: #cb11ab;
+    }
+  }
+
+  &__product{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #8b8b8b;
+    transition: color .1s linear;
+
+    & svg{
+      width: 10px;
+      height: 15px;
+      margin-left: 5px;
+    }
+
+    & svg path{
+      transition: stroke .1s linear;
+    }
+
+    &:hover{
+      color: #cb11ab;
+
+      & svg path{
+        stroke: #cb11ab;
+      }
+    }
+  }
+
+  &__term{
+    font-size: 14px;
+    line-height: 20px;
+    color: #242424;
+    &:not(:last-child){
+      margin-bottom: 12px;
+    }
+  }
+
+}
+
+
+.control{
+  flex-basis: 23%;
+  height: fit-content;
+  padding: 20px 24px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0,0,0,.1);
+
+  &__container{
+    position: relative;
+  }
+  &__price{
+    display: inline-block;
+    margin-bottom: 50px;
+    &_new{
+      margin-right: 10px;
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: 700;
+    }
+    &_old{
+      text-align: end;
+      text-decoration: line-through;
+      border-bottom: 1px dashed #8b8b8b;
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 700;
+      cursor: pointer;
+      color: #8b8b8b;
+    }
+  }
+  &__save{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+
+    & svg path{
+      transition: stroke .1s linear;
+    }
+
+    &:hover svg path{
+      stroke: #cb11ab;
+    }
+  }
+  &__btn{
+    width: 100%;
+    font-size: 16px;
+    padding: 11px 24px 13px;
+    line-height: 1.1;
+    background-color: #cb11ab;
+    border: 2px solid #cb11ab;
+    border-radius: 8px;
+    color: #fff;
+    transition: background-color .1s linear,
+    border-color .1s linear;
+
+    &:hover{
+      background-color: #e313bf;
+      border-color: #e313bf;
+    }
+  }
+}
+
+.description{
+  &__title{
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+  }
+
+  &__cols{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__dop-info{
+    flex-basis: 30%;
+    margin-right: 20px;
+  }
+
+  &__descr{
+    flex-basis: 30%;
+  }
+
+  &__company{
+    flex-basis: 30%;
+  }
+
+  &__subtitle{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 4px;
+  }
+
+  &__param{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__name{
+    color: #8b8b8b;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__name{
+    flex-shrink: 0;
+    margin-right: 10px;
+    color: #8b8b8b;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+    & span {
+      padding-right: 10px;
+      background-color: #fff;
+      z-index: 2;
+    }
+
+    &_dashed{
+      position: relative;
+      display: flex;
+      flex-basis: 80%;
+      &::after{
+        position: absolute;
+        top: 60%;
+        width: 100%;
+        border-bottom: 1px dashed #8b8b8b;
+        content: '';
+      }
+    }
+  }
+  
+  &__value{
+    font-size: 14px;
+    line-height: 20px;
+    color: #242424;
+  }
+}

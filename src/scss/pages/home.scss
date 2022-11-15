@@ -326,12 +326,16 @@
       background-color: rgba(255, 255, 255, 0.9);
       content: 'Быстрый просмотр';
       opacity: 0;
+      z-index: 2;
     }
   }
 
   &__content{
+    position: relative;
+    display: block;
     padding: 12px;
     border-radius: 18px 18px 0 0;
+    z-index: 1;
   }
 
   &__pictures{

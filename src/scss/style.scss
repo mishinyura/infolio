@@ -109,6 +109,11 @@ html {
 @import "components/btns";
 @import "components/modal";
 @import "components/menu-burger";
+// @import "components/navigation.scss";
+// @import "components/pagination.scss";
+// @import "components/swiper-vars.scss";
+// @import "components/achievement-block.scss";
+@import "base/swiper.scss";
 
 //layout
 @import "layout/header";
@@ -116,6 +121,7 @@ html {
 //pages
 @import "pages/home";
 @import "pages/cart";
+@import "pages/card.scss";
 //themes
 
 //vendors

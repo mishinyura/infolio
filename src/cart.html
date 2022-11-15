@@ -7,7 +7,7 @@
 @@include('html/header.html',{})
   <main class="main">
     <article class="main__container">
-      <article class="main__content">
+      <article class="main__wrapper">
         <section class="main__section products">
           <h2 class="products__title">
             Корзина
@@ -25,12 +25,63 @@
                   Цвет: светло-бежевый
                 </p>
               </div>
+              <div class="position__btns">
+                <button class="position__btn position__btn_delete btn-lock"></button>
+                <span class="position__amount">2</span>
+                <button class="position__btn position__btn_add"></button>
+              </div>
+              <div class="position__prices">
+                <span class="position__price position__price_new">
+                  2 478 ₽
+                </span>
+                <span class="position__price position__price_old">
+                  7 514 ₽
+                </span>
+              </div>
             </li>
           </ul>
         </section>
         <section class="main__section"></section>
       </article>
-      <aside class="main__check"></aside>
+      <aside class="main__bar check">
+        <div class="check__content">
+          <ul class="check__calc">
+            <li class="check__price check__price_new">
+              <div class="check__name">
+                <span class="check__text">Итого</span>
+              </div>   
+              <div class="check__data">
+                <span class="check__num">2 478</span>
+                <span class="check__currency">₽</span>
+              </div>
+            </li>
+            <li class="check__price check__price_old">
+              <div class="check__name">
+                <span class="check__text">Товары,</span>
+                <span class="check__amount">2</span>
+                <span>шт.</span>
+              </div>
+              <div class="check__data">
+                <span class="check__num">2 478</span>
+                <span class="check__currency">₽</span>
+              </div>
+            </li>
+            <li class="check__price check__price_discount">
+              <div class="check__name">
+                <span class="check__text">Скидка</span>
+              </div>   
+              <div class="check__data">
+                <span>-</span>
+                <span class="check__num">2 478</span>
+                <span class="check__currency">₽</span>
+              </div>
+            </li>
+          </ul>
+          <button class="check__btn">
+            Заказать
+          </button>
+        </div>
+      </aside>
     </article>
   </main>
 @@include('html/footer.html',{})

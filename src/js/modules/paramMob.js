@@ -1,19 +1,21 @@
-const navBurger = document.querySelector('.sidebar');
-const btnBurgerOpen = navBurger.querySelector('.sidebar__btn_mob');
-const btnBurgerClose = navBurger.querySelector('.sidebar__close');
-const navMenu = navBurger.querySelector('.sidebar__content');
-const classActiveBurger = 'active-param';
-const clickMenu = () => {
-  navMenu.classList.toggle(classActiveBurger);
-};
+if (document.querySelector('.sidebar')) {
+  const paramSidebar = document.querySelector('.sidebar');
+  const btnParamOpen = paramSidebar.querySelector('.sidebar__btn_mob');
+  const btnParamClose = paramSidebar.querySelector('.sidebar__close');
+  const paramMenu = paramSidebar.querySelector('.sidebar__content');
+  const classActiveParam = 'active-param';
+  const clickMenu = () => {
+    paramMenu.classList.toggle(classActiveParam);
+  };
 
-document.addEventListener( 'click', (e) => {
-  if (!e.composedPath().includes(btnBurgerOpen) && navMenu.classList.contains(classActiveBurger)) {
-    if (!e.composedPath().includes(navMenu)) {
-      clickMenu();
+  document.addEventListener( 'click', (e) => {
+    if (!e.composedPath().includes(btnParamOpen) && paramMenu.classList.contains(classActiveParam)) {
+      if (!e.composedPath().includes(paramMenu)) {
+        clickMenu();
+      }
     }
-  }
-});
+  });
 
-btnBurgerOpen.addEventListener('click', clickMenu);
-btnBurgerClose.addEventListener('click', clickMenu);
+  btnParamOpen.addEventListener('click', clickMenu);
+  btnParamClose.addEventListener('click', clickMenu);
+}
