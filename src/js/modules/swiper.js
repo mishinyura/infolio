@@ -7,7 +7,7 @@ const slider = new Swiper('.slider__inner', {
   loop: true,
   centeredSlides: true,
   slidesPerView: 1,
-  spaceBetween: 150,
+  spaceBetween: 5,
   effect: 'coverflow',
   coverflowEffect: {
     rotate: 0,
@@ -23,8 +23,8 @@ const slider = new Swiper('.slider__inner', {
 const switcher = new Swiper('.switch__inner', {
   direction: 'vertical',
   loop: true,
-  slidesPerView: 6,
-  spaceBetween: 5,
+  slidesPerView: 5.5,
+  spaceBetween: 115,
   navigation: {
     nextEl: '.switch__next',
     prevEl: '.switch__prev',
@@ -46,3 +46,14 @@ for (let item of switchSlides) {
     }
   });
 }
+
+const swiper = new Swiper('.similar__slider', {
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 5,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '.similar__next',
+    prevEl: '.similar__prev',
+  },
+});

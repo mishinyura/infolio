@@ -35,7 +35,7 @@
 }
 
 .achievement-block {
-  padding: 70px 0 75px 0;
+  // padding: 70px 0 75px 0;
   &__title {
      font-weight: 700;
      font-size: 42px;
@@ -61,9 +61,9 @@
  }
 }
 
-.swiper-slide {
-  padding: 30px 0;
-}
+// .swiper-slide {
+//   padding: 30px 0;
+// }
 
 .slider-item {
   background: #FFFFFF;
@@ -185,20 +185,20 @@
 
 .switch {
   position: relative;
-  margin: 0 auto;
+  margin-right: 20px;
+  padding: 50px 0;
   
 
   .swiper {
-     padding: 0 25px;
-     height: 650px;
-     padding-left: 0;
+    height: 530px;
+    width: 72px;
   }
   &__slide {
-     width: 90px;
-     height: 90px;
      cursor: pointer;
      border-radius: 8px;
      transition: all 0.3s;
+     overflow: hidden;
+     border: 2px solid transparent;
      img {
         width: 100%;
         height: 100%;
@@ -207,20 +207,20 @@
      &--active {
         transition: all 0.3s;
         background-color: #FFFFFF;
-        filter: drop-shadow(0px 0px 16px #A3CAE8);
+        border-color: #cb11ab;
      }
   }
   &__prev, &__next {
     width: 20px;
      position: absolute;
      left: 40%;
-     transform: translateY(-30px);
+     transform: translateY(-50px);
      cursor: pointer;
      z-index: 10;
   }
 
   &__next {
-    transform: translateY(30px);
+    transform: translateY(50px);
   }
 }
 

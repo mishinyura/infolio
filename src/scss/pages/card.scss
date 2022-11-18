@@ -1,20 +1,72 @@
 .main{
-  &__container{
-    display: flex;
-    flex-wrap: wrap;
+  &__container_card{
+    display: block;
   }
 }
 
 .head{
-  flex-basis: 100%;
+  margin-bottom: 50px;
+
+  &__title{
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    color: #242424;
+  }
+
+  &__args{
+    display: flex;
+  }
+
+  &__subtitle{
+    margin-right: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #8b8b8b;
+  }
+
+  &__descr{
+    font-size: 14px;
+    line-height: 20px;
+    color: #242424; 
+  }
+
+  &__article{
+    display: flex;
+    margin-right: 20px;
+  }
+
+  &__buy{
+    margin-right: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #8b8b8b; 
+  }
+
+  .card__rating{
+    margin-right: 20px;
+    margin-bottom: 0;
+
+    .card__star:nth-last-child(2){
+      margin-right: 10px;
+    }
+  }
 }
 
 .achievement-block{
-  flex-basis: 43%;
+  flex-basis: 42%;
+}
+
+.card-content{
+  display: flex;
+  grid-column-gap: 30px;
+  margin-bottom: 64px;
 }
 
 .details{
-  flex-basis: 25%;
+  flex-basis: 30%;
+  
   &__param{
     display: flex;
     align-items: center;
@@ -126,11 +178,31 @@
   }
 
   &__term{
+    display: flex;
+    align-items: center;
     font-size: 14px;
     line-height: 20px;
     color: #242424;
     &:not(:last-child){
       margin-bottom: 12px;
+    }
+
+    &:nth-child(1){
+      &::before{
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        content: url(../img/box.svg);
+      }
+    }
+
+    &:nth-child(2){
+      &::before{
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        content: url(../img/two-arrow.svg);
+      }
     }
   }
 
@@ -138,7 +210,7 @@
 
 
 .control{
-  flex-basis: 23%;
+  flex-basis: 25%;
   height: fit-content;
   padding: 20px 24px;
   border-radius: 16px;
@@ -203,6 +275,7 @@
 }
 
 .description{
+  margin-bottom: 64px;
   &__title{
     margin-bottom: 20px;
     font-size: 24px;
@@ -216,12 +289,13 @@
   }
 
   &__dop-info{
-    flex-basis: 30%;
-    margin-right: 20px;
+    flex-basis: 45%;
+    margin-right: 30px;
   }
 
   &__descr{
     flex-basis: 30%;
+    margin-right: 30px;
   }
 
   &__company{
@@ -264,7 +338,7 @@
     &_dashed{
       position: relative;
       display: flex;
-      flex-basis: 80%;
+      flex-basis: 60%;
       &::after{
         position: absolute;
         top: 60%;
@@ -274,10 +348,180 @@
       }
     }
   }
+
+  &__text{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+  }
   
   &__value{
+    flex-basis: 40%;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #242424;
+  }
+}
+
+.company{
+  &__head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+  }
+
+  &__title{
+    flex-basis: 100%;
+    display: block;
+    margin-bottom: 5px;
     font-size: 14px;
     line-height: 20px;
     color: #242424;
+  }
+
+  &__main-info{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__tooltip{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 17px;
+    height: 17px;
+    margin-left: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 12px;
+    cursor: pointer;
+
+    &:hover &-text{
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__tooltip-text{
+    position: absolute;
+    top: 16px;
+    width: 260px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+    font-size: 14px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .1s linear;
+  }
+
+  &__reviews{
+    display: inline-flex;
+    align-items: center;
+    &::after{
+      display: inline-block;
+      width: 3px;
+      height: 3px;
+      margin-right: 8px;
+      border: 2ps solid black;
+      background: black;
+      border-radius: 50px;
+      content: '';
+    }
+
+    .company__star{
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+    }
+  }
+
+  &__count{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+  }
+
+  &__amount-reviews{
+    font-size: 14px;
+    line-height: 20px;
+    color: #8b8b8b;
+  }
+
+  &__item{
+    display: flex;
+    justify-content: space-between;
+
+    &:not(:last-child){
+      margin-bottom: 10px;
+    }
+  }
+
+  &__icon{
+    width: 20px;
+    height: 20px;
+  }
+
+  &__value{
+    font-size: 14px;
+    line-height: 20px;
+    color: #8b8b8b;
+
+    & span {
+      margin-right: 3px;
+      font-weight: 500;
+      color: #242424;
+    }
+  }
+}
+
+.similar{
+  &__title{
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  &__slides{
+    position: relative;
+  }
+
+  &__slide{
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  &__next{
+    position: absolute;
+    width: 48px;
+    right: -20px;
+    top: 40%;
+    z-index: 10;
+    border-radius: 80px;
+    box-shadow: 0 0 12px rgba(0,0,0,.1);
+    cursor: pointer;
+    &::after{
+      content: url(../img/arrow-right-whitebg.svg);
+    }
+  }
+
+  &__prev{
+    position: absolute;
+    width: 48px;
+    left: -20px;
+    top: 40%;
+    z-index: 10;
+    border-radius: 80px;
+    box-shadow: 0 0 12px rgba(0,0,0,.1);
+    cursor: pointer;
+    &::after{
+      content: url(../img/arrow-left-whitebg.svg);
+    }
   }
 }
