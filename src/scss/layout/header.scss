@@ -56,6 +56,10 @@
       &:hover{
         border: 1px solid rgba(255, 255, 255, 1)
       }
+
+      @media (max-width: 576px) {
+        margin-right: 10px;
+      }
     }
 
     &__icon{
@@ -67,6 +71,8 @@
       height: 4px;
       border-radius: 10px;
       background-color: #fff;
+
+      
     }
     &__menu{
       position: absolute;
@@ -151,6 +157,16 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+
+    @media (max-width: 576px) {
+      align-items: center;
+    }
+  }
+
+  &__logo img{
+    @media (max-width: 576px) {
+      width: 120px;
+    }
   }
 
   &__btns{
@@ -164,11 +180,21 @@
 
     &:not(:last-child){
       margin-right: 20px;
+
+      @media (max-width: 576px) {
+        margin-right: 10px;
+      }
     }
 
     &:hover{
       & .header__btn-text{
         color: #fff;
+      }
+    }
+
+    @media (max-width: 375px) {
+      &:not(:last-child){
+        display: none;
       }
     }
   }
@@ -190,6 +216,13 @@
 
   &__icon{
     display: block;
+
+    @media (max-width: 576px) {
+      & svg{
+        width: 35px;
+        height: 35px;
+      }
+    }
   }
 
   &__btn-text{
@@ -197,5 +230,9 @@
     line-height: 20px;
     color: rgba(255,255,255,.6);
     transition: $transColor;
+
+    @media (max-width: 576px) {
+      display: none;
+    }
   }
 }
