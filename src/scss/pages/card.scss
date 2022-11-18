@@ -309,16 +309,42 @@
     margin-bottom: 4px;
   }
 
+  &__params{
+    position: relative;
+    height: 200px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition: height .1s linear;
+
+    &::after{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 30px;
+      background-color: rgba(255, 255, 255, 0.466);
+      box-shadow: 0 -15px 20px rgba(255, 255, 255, 0.466);
+      content: '';
+      transition: background-color .1s linear,
+      box-shadow .1s linear;
+    }
+
+    &.open-list::after{
+      background-color: rgba(255, 255, 255, 0);
+      box-shadow: 0 -15px 20px rgba(255, 255, 255, 0);
+    }
+
+    &.open-list{
+      height: 560px;
+    }
+  }
+
   &__param{
     display: flex;
     justify-content: space-between;
-  }
-
-  &__name{
-    color: #8b8b8b;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
+    &:not(:last-child){
+       margin-bottom: 5px;
+    }
   }
 
   &__name{
@@ -341,7 +367,7 @@
       flex-basis: 60%;
       &::after{
         position: absolute;
-        top: 60%;
+        top: 10px;
         width: 100%;
         border-bottom: 1px dashed #8b8b8b;
         content: '';
@@ -350,9 +376,36 @@
   }
 
   &__text{
+    position: relative;
+    height: 80px;
+    margin-bottom: 10px;
+    overflow: hidden;
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
+    transition: height .1s linear;
+
+    &::after{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 30px;
+      background-color: rgba(255, 255, 255, 0.466);
+      box-shadow: 0 -15px 20px rgba(255, 255, 255, 0.466);
+      content: '';
+      transition: background-color .1s linear,
+      box-shadow .1s linear;
+    }
+
+    &.open-list::after{
+      background-color: rgba(255, 255, 255, 0);
+      box-shadow: 0 -15px 20px rgba(255, 255, 255, 0);
+    }
+
+    &.open-list{
+      height: 500px;
+    }
   }
   
   &__value{
@@ -524,4 +577,13 @@
       content: url(../img/arrow-left-whitebg.svg);
     }
   }
+}
+
+.btn_lister{
+  font-size: 14px;
+  text-align: start;
+  line-height: 20px;
+  font-weight: 400;
+  border-bottom: 1px dashed rgba(139,139,139,.4);
+  color: #242424;
 }

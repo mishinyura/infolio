@@ -26,7 +26,7 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  padding: 30px 0;
+  padding: 30px 20px;
   // visibility: hidden;
   border-top: 1px solid #A1A6B4;
   transition: visibility .3s linear;
@@ -65,4 +65,47 @@
 .select-active{
   visibility: visible;
   height: 149px;
+}
+
+.accordeon{
+  counter-reset: count;
+
+  &__item{
+    
+  }
+
+  &__title{
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    &::before{
+      margin-right: 5px;
+      counter-increment: count;
+      content: counter(count)'.';
+    }
+  }
+
+  &__text{
+    counter-reset: number;
+
+    & li{
+      position: relative;
+      padding-left: 40px;
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 400;
+      &::before{
+        position: absolute;
+        left: 0;
+        margin-right: 5px;
+        counter-increment: number;
+        content: counter(count)'.'counter(number)'.';
+      }
+
+      &:not(:last-child){
+        margin-bottom: 15px;
+      }
+    }
+  }
+
 }
