@@ -16,10 +16,194 @@
         </button>
         <div class="sidebar__content">
           <button class="sidebar__close"></button>
-          <input type="checkbox">
-          <input type="checkbox">
-          <input type="checkbox">
-          <input type="checkbox">
+          <div class="sidebar__box terms">
+            <span class="terms__subtitle">
+              Сроки доставки
+            </span>
+            <ul class="terms__list">
+              <li class="terms__item">
+                <label class="terms__label">
+                  <input type="radio" name="term" class="terms__input">
+                  <span></span>
+                  <span class="terms__text">
+                    1 день
+                  </span>
+                </label>
+              </li>
+              <li class="terms__item">
+                <label class="terms__label">
+                  <input type="radio" name="term" class="terms__input">
+                  <span></span>
+                  <span class="terms__text">
+                    2 дня
+                  </span>
+                </label>
+              </li>
+              <li class="terms__item">
+                <label class="terms__label">
+                  <input type="radio" name="term" class="terms__input">
+                  <span></span>
+                  <span class="terms__text">
+                    до 3 дней
+                  </span>
+                </label>
+              </li>
+              <li class="terms__item">
+                <label class="terms__label">
+                  <input type="radio" name="term" class="terms__input">
+                  <span></span>
+                  <span class="terms__text">
+                    до 5 дней
+                  </span>
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="sidebar__box brands">
+            <span class="brands__subtitle">
+              Бренды
+            </span>
+            <ul class="brands__list">
+              <li class="brands__item">
+                <label class="brands__label">
+                  <input type="checkbox" class="brands__input">
+                  <span></span>
+                  <span class="brands__text">
+                    Msklaser (2 483) 
+                  </span>
+                </label>
+              </li>
+              <li class="brands__item">
+                <label class="brands__label">
+                  <input type="checkbox" class="brands__input">
+                  <span></span>
+                  <span class="brands__text">
+                    Attache (27) 
+                  </span>
+                </label>
+              </li>
+              <li class="brands__item">
+                <label class="brands__label">
+                  <input type="checkbox" class="brands__input">
+                  <span></span>
+                  <span class="brands__text">
+                    СИМА-ЛЕНД (11) 
+                  </span>
+                </label>
+              </li>
+              <li class="brands__item">
+                <label class="brands__label">
+                  <input type="checkbox" class="brands__input">
+                  <span></span>
+                  <span class="brands__text">
+                    Hatber (8) 
+                  </span>
+                </label>
+              </li>
+              <li class="brands__item">
+                <label class="brands__label">
+                  <input type="checkbox" class="brands__input">
+                  <span></span>
+                  <span class="brands__text">
+                    Alistar (6) 
+                  </span>
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="sidebar__box price">
+            <span class="price__subtitle">
+              Цена, ₽
+            </span>
+            <div class="price__inputs">
+              <span class="price__min">
+                <span class="price__text">
+                  От
+                </span>
+                <input class='price__input price__input_lb' type="text" value="199">
+              </span>
+              <span class="price__max">
+                <span class="price__text">
+                  До
+                </span>
+                <input class='price__input price__input_rb' type="text" value="1400">
+              </span>
+            </div>
+          </div>
+          <div class="sidebar__box discount">
+            <span class="discount__subtitle">
+              Сроки доставки
+            </span>
+            <ul class="discount__list">
+              <li class="discount__item">
+                <label class="discount__label">
+                  <input type="radio" name="discount" class="discount__input">
+                  <span></span>
+                  <span class="discount__text">
+                    от 10% и выше
+                  </span>
+                </label>
+              </li>
+              <li class="discount__item">
+                <label class="discount__label">
+                  <input type="radio" name="discount" class="discount__input">
+                  <span></span>
+                  <span class="discount__text">
+                    от 30% и выше
+                  </span>
+                </label>
+              </li>
+              <li class="discount__item">
+                <label class="discount__label">
+                  <input type="radio" name="discount" class="discount__input">
+                  <span></span>
+                  <span class="discount__text">
+                    от 50% и выше
+                  </span>
+                </label>
+              </li>
+              <li class="discount__item">
+                <label class="discount__label">
+                  <input type="radio" name="discount" class="discount__input">
+                  <span></span>
+                  <span class="discount__text">
+                    от 70% и выше
+                  </span>
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="sidebar__box color">
+            <span class="color__subtitle">
+              Цвет
+            </span>
+            <ul class="color__list">
+              <li class="color__item">
+                <label class="color__label">
+                  <input type="radio" name="color" class="color__input">
+                  <span data-color="red" class="red"></span>
+                </label>
+              </li>
+              <li class="color__item">
+                <label class="color__label">
+                  <input type="radio" name="color" class="color__input">
+                  <span data-color="black" class="black"></span>
+                </label>
+              </li>
+              <li class="color__item">
+                <label class="color__label">
+                  <input type="radio" name="color" class="color__input">
+                  <span data-color="green" class="green"></span>
+                </label>
+              </li>
+              <li class="color__item">
+                <label class="color__label">
+                  <input type="radio" name="color" class="color__input">
+                  <span data-color="yellow" class="yellow"></span>
+                </label>
+              </li>
+            </ul>
+          </div>
         </div>
       </aside>
       <article class="main__content">
@@ -78,11 +262,6 @@
               </button>
             </div>
           </div>
-          <ul class="sorted__tags">
-            <li class="sorted__tag">
-              Ежедневные
-            </li>
-          </ul>
         </section>
         <section class="main__section showcase">
           <ul class="showcase__list">
