@@ -1,14 +1,22 @@
 if (document.querySelector('.description__dop-info')) {
-  const dopInfoList = document.querySelector('.description__dop-info');
-  const descrList = document.querySelector('.description__descr');
-  const dopInfoBtn = dopInfoList.children[2];
-  const descrBtn = descrList.children[2];
+  const btnsLister = document.querySelectorAll('.btn_lister');
   const classActive = 'open-list';
+  let heightList;
 
   const editPositionList = (btn) => {
-    btn.target.previousElementSibling.classList.toggle(classActive);
+    heightList = 0;
+    const lst = btn.target.previousElementSibling;
+    heightList += lst.scrollHeight;
+    if (btn.target.previousElementSibling.hasAttribute('style')) {
+      lst.removeAttribute('style');
+      lst.classList.remove(classActive);
+    } else {
+      lst.style.height = `${heightList}px`;
+      lst.classList.add(classActive);
+    }
   };
 
-  dopInfoBtn.addEventListener('click', editPositionList);
-  descrBtn.addEventListener('click', editPositionList);
+  btnsLister.forEach((el) => {
+    el.addEventListener('click', editPositionList);
+  });
 }
