@@ -16,6 +16,11 @@
       flex-basis: 100%;
     }
   }
+
+  @media (max-width: 576px) {
+    padding-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 .sorted{
@@ -213,7 +218,7 @@
       left: -350px;
       top: -185px;
       width: 320px;
-      height: 100vh;
+      height: auto;
       padding: 20px;
       background-color: #fff;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.355);
@@ -223,6 +228,10 @@
       &.active-param{
         left: -30px;
       }
+    }
+
+    @media (max-width: 576px) {
+      top: -57px;
     }
   }
 

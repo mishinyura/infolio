@@ -11,6 +11,10 @@
     border-radius: 0 0 30px 30px;
     background-color: #fff;
     content: '';
+
+    @media (max-width: 576px) {
+      content: none;
+    }
   }
 
   &__container{

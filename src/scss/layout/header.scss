@@ -11,12 +11,20 @@
     border-radius: 30px 30px 0 0;
     background-color: #fff;
     content: '';
+
+    @media (max-width: 576px) {
+      content: none;
+    }
   }
 
   &__container{
     display: flex;
     align-items: center;
     margin-bottom: 30px;
+
+    @media (max-width: 576px) {
+      margin-bottom: 5px;
+    }
   }
 
   .nav{
@@ -39,6 +47,13 @@
         border-radius: 10px;
         background-color: #fff;
         content: '';
+
+        @media (max-width: 576px) {
+          width: 15px;
+          height: 3px;
+          left: 4px;
+          bottom: 3px;
+        }
       }
 
       &::after{
@@ -51,6 +66,13 @@
         border-radius: 10px;
         background-color: #fff;
         content: '';
+
+        @media (max-width: 576px) {
+          width: 15px;
+          height: 3px;
+          left: 4px;
+          top: 3px;
+        }
       }
 
       &:hover{
@@ -59,6 +81,9 @@
 
       @media (max-width: 576px) {
         margin-right: 10px;
+        width: 25px;
+        height: 25px;
+        padding: 0;
       }
     }
 
@@ -72,7 +97,11 @@
       border-radius: 10px;
       background-color: #fff;
 
-      
+      @media (max-width: 576px) {
+        width: 15px;
+        height: 3px;
+        left: 4px;
+      }
     }
     &__menu{
       position: absolute;
@@ -234,5 +263,9 @@
     @media (max-width: 576px) {
       display: none;
     }
+  }
+
+  @media (max-width: 576px) {
+    padding: 5px 0 0;
   }
 }

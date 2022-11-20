@@ -6,7 +6,7 @@
 <body>
 @@include('html/header.html',{})
   <main class="main">
-    <article class="main__container">
+    <article class="main__container main__container_cart">
       <article class="main__wrapper">
         <section class="main__section products">
           <h2 class="products__title">
@@ -18,12 +18,22 @@
                 <picture class="position__img">
                   <img src="./img/1.png" alt="">
                 </picture>
-                <h3 class="position__name">
-                  Ежедневник датированный 2023 А5 176л, INFOLIO
-                </h3>
-                <p class="position__param">
-                  Цвет: светло-бежевый
-                </p>
+                <div class="position__box">
+                  <div class="position__prices position__prices_mob">
+                    <span class="position__price position__price_new">
+                      2 478 ₽
+                    </span>
+                    <span class="position__price position__price_old">
+                      7 514 ₽
+                    </span>
+                  </div>
+                  <h3 class="position__name">
+                    Ежедневник датированный 2023 А5 176л, INFOLIO
+                  </h3>
+                  <p class="position__param">
+                    Цвет: светло-бежевый
+                  </p>
+                </div>
               </div>
               <div class="position__btns">
                 <button class="position__btn position__btn_delete btn-lock"></button>
@@ -41,7 +51,6 @@
             </li>
           </ul>
         </section>
-        <section class="main__section"></section>
       </article>
       <aside class="main__bar check">
         <div class="check__content">
