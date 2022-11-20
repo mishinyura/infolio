@@ -6,7 +6,6 @@ Swiper.use([Autoplay, Navigation, Pagination, Scrollbar, EffectCoverflow]);
 const slider = new Swiper('.slider__inner', {
   loop: true,
   centeredSlides: true,
-  slidesPerView: 1,
   spaceBetween: 5,
   effect: 'coverflow',
   coverflowEffect: {
@@ -18,6 +17,17 @@ const slider = new Swiper('.slider__inner', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    576: {
+      slidesPerView: 1.5,
+    },
+    1024: {
+      slidesPerView: 1,
+    },
+  }
 });
 
 const switcher = new Swiper('.switch__inner', {

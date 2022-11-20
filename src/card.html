@@ -7,7 +7,7 @@
 @@include('html/header.html',{})
   <main class="main">
     <article class="main__container_card">
-      <section class="main__section head">
+      <section class="main__section head head_desk">
         <h1 class="head__title">
           INFOLIO Тетрадь на кольцах А5 на 120л клетка
         </h1>
@@ -152,19 +152,23 @@
                     <img src="./img/06.png" alt="">
                   </div>
                 </div>
-                <div class="swiper-button-prev">
-                  <img src="./img/prevbtn_small.svg" alt="">
-                </div>
-                <div class="swiper-button-next">
-                  <img src="./img/nextbtn_small.svg" alt="">
-                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
               </div>
             </div>
           </div>
         </div>
         <div class="card-content__box details">
-          <div class="details__container">
+          <div class="details__content">
             <div class="details__param">
+              <div class="details__prices_mob">
+                <span class="details__price details__price_new">
+                  318 ₽
+                </span>
+                <span class="detail__price details__price_old">
+                  1 099 ₽
+                </span>
+              </div>
               <span class="details__name">
                 Цвет:
               </span>
@@ -182,6 +186,16 @@
               <a href="#" class="details__link">
                 <img src="./img/4.png" alt="">
               </a>
+            </div>
+            <div class="details__btns-add">
+              <button class="details__btn_add">
+                Добавить в корзину
+              </button>
+              <button class="control__save">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2.5 2.21171 25 20.29">
+                  <path d="M 10 20 C 6.6667 16.6667 1 15 0 10 C 0 3 8 4 10 7 C 12 4 20 3 20 10 C 19 15 13.3333 16.6667 10 20 Z" stroke="#242424" stroke-width="1.5" fill="none"/>
+                </svg>
+              </button>
             </div>
             <div class="details__dop-info">
               <h3 class="details__subtitle">
@@ -274,8 +288,54 @@
           </div>
         </div>
       </section>
+      <section class="main__section head head_mob">
+        <a href="#" class="head__title">
+          INFOLIO Тетрадь на кольцах А5 на 120л клетка
+        </a>
+        <div class="head__args">
+          <ul class="card__rating">
+            <li class="card__star card__star_y">
+              <svg width="16" height="16">
+                <path d='M 7 0 L 5 5 L 0 5 L 4 8 L 2 13 L 7 10 L 12 13 L 10 8 L 14 5 L 9 5'/>
+              </svg>
+            </li>
+            <li class="card__star">
+              <svg width="16" height="16">
+                <path d='M 7 0 L 5 5 L 0 5 L 4 8 L 2 13 L 7 10 L 12 13 L 10 8 L 14 5 L 9 5'/>
+              </svg>
+            </li>
+            <li class="card__star">
+              <svg width="16" height="16">
+                <path d='M 7 0 L 5 5 L 0 5 L 4 8 L 2 13 L 7 10 L 12 13 L 10 8 L 14 5 L 9 5'/>
+              </svg>
+            </li>
+            <li class="card__star">
+              <svg width="16" height="16">
+                <path d='M 7 0 L 5 5 L 0 5 L 4 8 L 2 13 L 7 10 L 12 13 L 10 8 L 14 5 L 9 5'/>
+              </svg>
+            </li>
+            <li class="card__star">
+              <svg width="16" height="16">
+                <path d='M 7 0 L 5 5 L 0 5 L 4 8 L 2 13 L 7 10 L 12 13 L 10 8 L 14 5 L 9 5'/>
+              </svg>
+            </li>
+            <li class="card__count">33 отзывов</li>
+          </ul>
+          <span class="head__article">
+            <h3 class="head__subtitle">
+              Арт:
+            </h3>
+            <span class="head__descr">
+              59894136
+            </span>
+          </span>
+          <span class="head__buy">
+            Купили более 1 000 раз
+          </span>
+        </div>
+      </section>
       <section class="main__section description">
-        <div class="description__container">
+        <div class="description__content">
           <h2 class="description__title">
             О товаре
           </h2>

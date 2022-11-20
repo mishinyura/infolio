@@ -13,6 +13,23 @@
     line-height: 32px;
     font-weight: 700;
     color: #242424;
+
+    @media (max-width: 1024px) {
+      position: relative;
+      display: inline-block;
+      padding-right: 20px;
+      font-size: 18px;
+      line-height: 24px;
+
+      &::after{
+        position: absolute;
+        right: 0;
+        top: 2px;
+        width: 15px;
+        height: 15px;
+        content: url(../img/arrow-right-black.svg);
+      }
+    }
   }
 
   &__args{
@@ -52,16 +69,42 @@
       margin-right: 10px;
     }
   }
+
+  &_desk{
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+  &_mob{
+    display: none;
+    @media (max-width: 1024px) {
+      display: block;
+    }
+  }
 }
 
 .achievement-block{
   flex-basis: 42%;
+
+  @media (max-width: 1230px) {
+    flex-basis: 50%;
+  }
+
+  @media (max-width: 1024px) {
+    flex-basis: 100%;
+  }
 }
 
 .card-content{
   display: flex;
   grid-column-gap: 30px;
   margin-bottom: 64px;
+
+  @media (max-width: 1024px) {
+    display: block;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #cbcbcb;
+  }
 }
 
 .details{
@@ -75,10 +118,43 @@
     &:nth-child(1){
       justify-content: flex-start;
     }
+
+    @media (max-width: 1024px) {
+      flex-wrap: wrap;
+    }
   }
 
   &__subtitle{
     margin-bottom: 15px;
+  }
+
+  &__prices_mob{
+    display: none;
+    margin-bottom: 20px;
+
+    @media (max-width: 1024px) {
+      display: block;
+      flex-basis: 100%;
+    }
+    
+  }
+
+  &__price_new{
+    margin-right: 10px;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+  }
+
+  &__price_old{
+    text-align: end;
+    text-decoration: line-through;
+    border-bottom: 1px dashed #8b8b8b;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+    cursor: pointer;
+    color: #8b8b8b;
   }
 
   &__models{
@@ -131,6 +207,12 @@
   &__value{
     flex-basis: 20%;
     flex-shrink: 0;
+  }
+
+  &__dop-info{
+    @media (max-width: 1024px) {
+      display: none;
+    }
   }
 
   &__detail{
@@ -204,6 +286,71 @@
         content: url(../img/two-arrow.svg);
       }
     }
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  &__btns-add{
+    position: relative;
+    display: none;
+    margin-bottom: 20px;
+
+    @media (max-width: 1230px) {
+      display: block;
+    }
+    @media (max-width: 1024px) {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      height: 60px;
+      margin-bottom: 0;
+      z-index: 100;
+      background-color: #fff;
+    }
+  }
+
+  &__btns{
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  &__btn_add{
+    width: 75%;
+    font-size: 16px;
+    padding: 11px 24px 13px;
+    line-height: 1.1;
+    background-color: #cb11ab;
+    border: 2px solid #cb11ab;
+    border-radius: 8px;
+    color: #fff;
+    transition: background-color .1s linear,
+    border-color .1s linear;
+
+    &:hover{
+      background-color: #e313bf;
+      border-color: #e313bf;
+    }
+
+    @media (max-width: 1024px) {
+      width: 96%;
+      margin: auto;
+      height: 60%;
+      padding: 0;
+    }
+  }
+
+  .control__save{
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 1230px) {
+    flex-basis: 50%;
   }
 
 }
@@ -272,6 +419,10 @@
       border-color: #e313bf;
     }
   }
+
+  @media (max-width: 1230px) {
+    display: none;
+  }
 }
 
 .description{
@@ -286,16 +437,30 @@
   &__cols{
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 1024px) {
+      display: block;
+    }
   }
 
   &__dop-info{
     flex-basis: 45%;
     margin-right: 30px;
+
+    @media (max-width: 1024px) {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
   }
 
   &__descr{
     flex-basis: 30%;
     margin-right: 30px;
+
+    @media (max-width: 1024px) {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
   }
 
   &__company{
@@ -373,6 +538,10 @@
         content: '';
       }
     }
+
+    @media (max-width: 576px) {
+      flex-basis: 80%;
+    }
   }
 
   &__text{
@@ -414,6 +583,10 @@
     line-height: 20px;
     font-weight: 400;
     color: #242424;
+
+    @media (max-width: 576px) {
+      flex-basis: 18%;
+    }
   }
 }
 
@@ -425,6 +598,10 @@
     border-bottom: 1px solid #e8e8e8;
     padding-bottom: 16px;
     margin-bottom: 16px;
+
+    @media (max-width: 576px) {
+      display: block;
+    }
   }
 
   &__title{
@@ -586,4 +763,35 @@
   font-weight: 400;
   border-bottom: 1px dashed rgba(139,139,139,.4);
   color: #242424;
+}
+
+.switch{
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}
+
+.slider{
+  @media (max-width: 1024px) {
+    width: 100%;
+    height: auto;
+  }
+  & img{
+    @media (max-width: 1024px) {
+      height: 500px;
+    }
+  }
+}
+
+.achievement-block{
+  &__container{
+    @media (max-width: 1024px) {
+      padding: 0;
+      max-width: initial;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    margin-bottom: 30px;
+  }
 }
