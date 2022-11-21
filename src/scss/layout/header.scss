@@ -329,7 +329,7 @@
     background-repeat: no-repeat;
     background-position: 45% 0;
 
-    &:not(:last-child){
+    &:not(:nth-child(3n)){
       margin-right: 20px;
 
       @media (max-width: 576px) {

@@ -6,7 +6,34 @@
 <body>
 @@include('html/header.html',{})
   <main class="main">
-    <article class="main__container main__container">
+    <article class="main__container main__container_home">
+      <section class="main__section head-home">
+        <ul class="head-home__breadcrumbs breadcrumbs">
+          <li class="breadcrumbs__item">
+            Главная
+          </li>
+          <li class="breadcrumbs__item">
+            Бренды на «I»
+          </li>
+          <li class="breadcrumbs__item">
+            INFOLIO
+          </li>
+        </ul>
+        <a href="/" class="breadcrumbs__link">
+          <img src="./img/logo-w.jpg" alt="" class="breadcrumbs__logo">
+        </a>
+        <div class="head-home__inner">
+          <h1 class="head-home__title">
+            Каталог INFOLIO
+          </h1>
+          <span class="head-home__amount">
+            2222 товаров
+          </span>
+          <button class="head-home__favorites">
+            Добавить в любимые бренды <span>1627</span>
+          </button>
+        </div>
+      </section>
       <aside class="main__left-menu sidebar">
         <button class="sidebar__btn_mob">
           <svg width="20" heigth="20" fill="#D800DF">
@@ -16,6 +43,9 @@
         </button>
         <div class="sidebar__content">
           <button class="sidebar__close"></button>
+          <a href="/" class="sidebar__link">
+            <img src="./img/logo-w.jpg" alt="" class="sidebar__logo">
+          </a>
           <div class="sidebar__box terms">
             <span class="terms__subtitle">
               Сроки доставки
