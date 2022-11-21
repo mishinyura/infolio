@@ -173,7 +173,7 @@
       transition: $transTransform;
 
       &.active-sortlist {
-        bottom: 0;
+        bottom: 60px;
       }
     }
   }
@@ -182,6 +182,7 @@
     border-bottom: 1px dashed #8b8b8b;
     font-size: 12px;
     line-height: 20px;
+    width: fit-content;
     color: #242424;
     cursor: pointer;
     transition: $transColor;
@@ -297,7 +298,7 @@
 
 .sidebar{
   flex-basis: 19%;
-  margin-right: 30px;
+  margin-right: 25px;
 
   &__btn_mob{
     display: none;
@@ -339,8 +340,8 @@
       }
     }
 
-    @media (max-width: 576px) {
-      top: -57px;
+    @media (max-width: 410px) {
+      top: -240px;
     }
   }
 
@@ -449,6 +450,10 @@
     z-index: 1;
   }
 
+  &__box{
+    position: relative;
+  }
+
   &__pictures{
     display: block;
 
@@ -460,6 +465,20 @@
         display: none;
       }
     }
+  }
+
+  &__discount{
+    position: absolute;
+    left: 8px;
+    bottom: 8px;
+    background-color: #fdeef9;
+    font-weight: 700;
+    font-size: 12px;
+    color: #cb11ab;
+    padding: 0 5px;
+    border: 1px solid #fdeef9;
+    border-radius: 20px;
+    z-index: 2;
   }
 
   &__price_new{
@@ -492,7 +511,6 @@
   &__rating{
     display: flex;
     align-items: center;
-    margin-bottom: 8px;
     cursor: pointer;
   }
 
@@ -512,7 +530,6 @@
   }
 
   &__delivery{
-    margin-bottom: 5px;
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
@@ -934,5 +951,52 @@
   }
   .yellow{
     background-color: yellow;
+  }
+}
+
+.main__chat-btn{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #cb11ab;
+  border-radius: 80px;
+  &::before{
+    width: 24px;
+    height: 24px;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url(data:image/svg+xml,%3Csvg%20width%3D%2224%22%20height%3D%2226%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M10.12.12c6.408-.918%2012.315%203.51%2013.194%209.891.879%206.381-3.603%2012.299-10.01%2013.217-2.233.32-6.325-.844-6.325-.844l-3.224%202.867-.793-5.76S.438%2015.72.11%2013.338C-.769%206.957%203.713%201.04%2010.12.121zM8.56%2012.214a1.6%201.6%200%2011-3.2%200%201.6%201.6%200%20013.2%200zm3.2%201.6a1.6%201.6%200%20100-3.2%201.6%201.6%200%20000%203.2zm6.4-1.6a1.6%201.6%200%2011-3.2%200%201.6%201.6%200%20013.2%200z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fsvg%3E);
+  }
+}
+
+.main__up-btn{
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #cb11ab;
+  border-radius: 80px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .1s linear;
+  &::before{
+    width: 20px;
+    height: 20px;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url(data:image/svg+xml,%3Csvg%20width%3D%2218%22%20height%3D%2218%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M7.966%203.742L2.15%209.244a1.004%201.004%200%2001-1.38-1.46L8.312.65a1%201%200%20011.374%200l7.545%207.135a1.004%201.004%200%2001-1.38%201.459l-5.818-5.502V17a1%201%200%2001-1%201h-.068a1%201%200%2001-1-1V3.742z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fsvg%3E);
+  }
+  &.--active{
+    opacity: 1;
+    visibility: visible;
   }
 }

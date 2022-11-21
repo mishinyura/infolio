@@ -12,3 +12,4 @@ import './modules/sorted.js';
 import './modules/accordeon.js';
 import './modules/closelist.js';
 import './modules/form.js';
+import './modules/upbtn.js';
