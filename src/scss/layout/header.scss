@@ -91,39 +91,25 @@
       &::before{
         position: relative;
         left: 0;
-        bottom: 5px;
+        top: 2px;
         display: block;
         width: 28px;
         height: 4px;
         border-radius: 10px;
         background-color: #fff;
         content: '';
-
-        @media (max-width: 576px) {
-          width: 15px;
-          height: 3px;
-          left: 4px;
-          bottom: 3px;
-        }
       }
 
       &::after{
         position: relative;
         left: 0;
-        top: 5px;
+        bottom: -14px;
         display: block;
         width: 28px;
         height: 4px;
         border-radius: 10px;
         background-color: #fff;
         content: '';
-
-        @media (max-width: 576px) {
-          width: 15px;
-          height: 3px;
-          left: 4px;
-          top: 3px;
-        }
       }
 
       &:hover{
@@ -138,18 +124,12 @@
     &__icon{
       position: relative;
       left: 0;
-      top: 0;
+      top: 8px;
       display: block;
       width: 28px;
       height: 4px;
       border-radius: 10px;
       background-color: #fff;
-
-      @media (max-width: 576px) {
-        width: 15px;
-        height: 3px;
-        left: 4px;
-      }
     }
     &__menu{
       display: none;

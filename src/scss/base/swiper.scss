@@ -176,13 +176,6 @@
 
 }
 
-.swiper-button-prev, .swiper-button-next {
-
-  &::after {
-     content: '';
-  }
-}
-
 .switch {
   position: relative;
   margin-right: 20px;
@@ -231,28 +224,4 @@
 .slider{
   width: 490px;
   height: 650px;
-}
-
-.swiper-button-prev{
-  &::after{
-    content: url(../../img/prevbnt_small.svg) !important;
-  }
-}
-
-.swiper-button-next{
-  &::after{
-    content: url(../../img/nextbnt_small.svg) !important;
-  }
-}
-
-.switch__prev{
-  &::after{
-    content: url(../../img/prevbnt-small.svg) !important;
-  }
-}
-
-.switch__next{
-  &::after{
-    content: url(../../img/nextbnt-small.svg) !important;
-  }
 }
