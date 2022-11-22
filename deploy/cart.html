@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="css/style.min.css?_v=20221122153129">
+  <link rel="apple-touch-icon" sizes="120x120" href="./img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>Корзина</title>
+</head>
+
+<body>
+<header class="header">
+  <div class="header__container">
+    <div class="header__head">
+      <span class="header__lang">
+        RUB
+      </span>
+      <span class="header__geo">
+        Москва
+      </span>
+      <span class="header__tag">
+        Продавайте на Wildberries
+      </span>
+      <span class="header__tag header__tag_orange">
+        Работа в Wildberries
+      </span>
+    </div>
+    <div class="header__body">
+      <nav class="header__nav nav">
+        <a href="/" class="nav__burger">
+          <span class="nav__icon"></span>
+        </a>
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link"></a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link"></a>
+            </li>
+            <li class="nav__item">
+              <a href="cart.html" class="nav__link">
+                <span class="header__count">2</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link"></a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link"></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="header__content">
+        <a href="/" class="header__logo">
+          <picture><source srcset="../img/logo.webp" type="image/webp"><img src="../img/logo.png" alt="Логотип Infolio"></picture>
+        </a>
+        <label class="header__search">
+          <input type="text" class="header__input" placeholder="Я ищу">
+        </label>
+        <div class="header__btns">
+          <a href="#" class="header__btn header__btn_desk">
+            Адреса
+          </a>
+          <a href="#" class="header__btn header__btn_desk">
+            Войти
+          </a>
+          <a href="../cart.html" class="header__btn header__btn_desk">
+            <span class="header__count">2</span>
+            Корзина
+          </a>
+          <a href="#" class="header__btn header__btn_mob header__btn_lang">RUS</a>
+          <a href="#" class="header__btn header__btn_mob header__btn_geo"></a>
+          <a href="#" class="header__btn header__btn_mob header__btn_search"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+  <main class="main">
+    <article class="main__container main__container_cart">
+      <article class="main__wrapper">
+        <section class="main__section products">
+          <h2 class="products__title">
+            Корзина
+          </h2>
+          <ul class="products__list">
+            <li class="products__item position">
+              <div class="position__descr">
+                <picture class="position__img">
+                  <img src="./img/1.png" alt="">
+                </picture>
+                <div class="position__box">
+                  <div class="position__prices position__prices_mob">
+                    <span class="position__price position__price_new">
+                      2 478 ₽
+                    </span>
+                    <span class="position__price position__price_old">
+                      7 514 ₽
+                    </span>
+                  </div>
+                  <h3 class="position__name">
+                    Ежедневник датированный 2023 А5 176л, INFOLIO
+                  </h3>
+                  <p class="position__param">
+                    Цвет: светло-бежевый
+                  </p>
+                </div>
+              </div>
+              <div class="position__btns">
+                <button class="position__btn position__btn_delete btn-lock"></button>
+                <span class="position__amount">2</span>
+                <button class="position__btn position__btn_add"></button>
+              </div>
+              <div class="position__prices">
+                <span class="position__price position__price_new">
+                  2 478 ₽
+                </span>
+                <span class="position__price position__price_old">
+                  7 514 ₽
+                </span>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </article>
+      <aside class="main__bar check">
+        <div class="check__content">
+          <ul class="check__calc">
+            <li class="check__price check__price_new">
+              <div class="check__name">
+                <span class="check__text">Итого</span>
+              </div>   
+              <div class="check__data">
+                <span class="check__num">2 478</span>
+                <span class="check__currency">₽</span>
+              </div>
+            </li>
+            <li class="check__price check__price_old">
+              <div class="check__name">
+                <span class="check__text">Товары,</span>
+                <span class="check__amount">2</span>
+                <span>шт.</span>
+              </div>
+              <div class="check__data">
+                <span class="check__num">2 478</span>
+                <span class="check__currency">₽</span>
+              </div>
+            </li>
+            <li class="check__price check__price_discount">
+              <div class="check__name">
+                <span class="check__text">Скидка</span>
+              </div>   
+              <div class="check__data">
+                <span>-</span>
+                <span class="check__num">2 478</span>
+                <span class="check__currency">₽</span>
+              </div>
+            </li>
+          </ul>
+          <button class="check__btn">
+            Заказать
+          </button>
+        </div>
+      </aside>
+    </article>
+  </main>
+<footer class="footer">
+  <div class="footer__container">
+    <ul class="footer__list">
+      <li class="footer__subtitle">
+        Покупателям
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          Как сделать заказ
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          Способы оплаты
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          Доставка
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          Возврат товара
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          Возврат денежных средств
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          Правила продажи
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="info.html" class="footer__link">
+          Правила пользования торговой площадкой
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          Вопросы и ответы
+        </a>
+      </li>
+    </ul>
+    <ul class="footer__list">
+      <li class="footer__subtitle">
+        Партнерам
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          Продавайте на Wildberries
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          Перевозчикам
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          Партнерский пункт выдачи
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          Франшизный пункт выдачи
+        </a>
+      </li>
+    </ul>
+    <ul class="footer__list">
+      <li class="footer__subtitle">
+        Наши проекты
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          WB Guru
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          Трудоустройство
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          Цифровые товары
+        </a>
+      </li>
+    </ul>
+    <ul class="footer__list">
+      <li class="footer__subtitle">
+        Компания
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          О нас
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          Реквизиты
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          Пресс-центр
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          Контакты
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          Bug Bounty
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          WB.Tech
+        </a>
+      </li>
+    </ul>
+    <ul class="footer__list">
+      <li class="footer__subtitle">
+        Мы в соцсетях
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          Вконтакте
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          Одноклассники
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          YouTube
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          Телеграм
+        </a>
+      </li>
+    </ul>
+    <ul class="footer__list">
+      <li class="footer__subtitle">
+        Мобильные устройства
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          <picture><source srcset="../img/google_play.webp" type="image/webp"><img src="../img/google_play.png" alt=""></picture>
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          <picture><source srcset="../img/app_store.webp" type="image/webp"><img src="../img/app_store.png" alt=""></picture>
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          <picture><source srcset="../img/app_gallery.webp" type="image/webp"><img src="../img/app_gallery.png" alt=""></picture>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="footer__copyright">
+    2004-2022 © Wildberries — модный интернет-магазин одежды, обуви и аксессуаров. Все права защищены. Доставка по всей России. 
+  </div>
+</footer>
+<script src="./js/app.min.js?_v=20221122153129"></script>
+</body>
+
+</html>

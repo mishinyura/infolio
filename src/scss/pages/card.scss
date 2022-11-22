@@ -114,6 +114,7 @@
     display: flex;
     align-items: center;
     height: 653px;
+    margin-bottom: 20px;
 
     @media (max-width: 1024px) {
       height: 600px;
@@ -404,6 +405,7 @@
   &__term{
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
     font-size: 14px;
     line-height: 20px;
     color: #242424;
@@ -578,6 +580,22 @@
   &__head{
     display: flex;
     justify-content: space-between;
+  }
+
+  &__caption{
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+  }
+
+  &__range{
+    font-size: 14px;
+    line-height: 20px;
+    color: #8b8b8b;
+
+    & span{
+      color: #242424;
+    }
   }
 
   &__diagram img{

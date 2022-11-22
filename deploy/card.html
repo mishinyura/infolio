@@ -1,24 +1,94 @@
 <!DOCTYPE html>
 <html lang="ru">
-@@include('html/head.html',{
-"title":"Главная"
-})
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="css/style.min.css?_v=20221122153129">
+  <link rel="apple-touch-icon" sizes="120x120" href="./img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>Главная</title>
+</head>
+
 <body>
-@@include('html/header.html',{})
+<header class="header">
+  <div class="header__container">
+    <div class="header__head">
+      <span class="header__lang">
+        RUB
+      </span>
+      <span class="header__geo">
+        Москва
+      </span>
+      <span class="header__tag">
+        Продавайте на Wildberries
+      </span>
+      <span class="header__tag header__tag_orange">
+        Работа в Wildberries
+      </span>
+    </div>
+    <div class="header__body">
+      <nav class="header__nav nav">
+        <a href="/" class="nav__burger">
+          <span class="nav__icon"></span>
+        </a>
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link"></a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link"></a>
+            </li>
+            <li class="nav__item">
+              <a href="cart.html" class="nav__link">
+                <span class="header__count">2</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link"></a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link"></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="header__content">
+        <a href="/" class="header__logo">
+          <picture><source srcset="../img/logo.webp" type="image/webp"><img src="../img/logo.png" alt="Логотип Infolio"></picture>
+        </a>
+        <label class="header__search">
+          <input type="text" class="header__input" placeholder="Я ищу">
+        </label>
+        <div class="header__btns">
+          <a href="#" class="header__btn header__btn_desk">
+            Адреса
+          </a>
+          <a href="#" class="header__btn header__btn_desk">
+            Войти
+          </a>
+          <a href="../cart.html" class="header__btn header__btn_desk">
+            <span class="header__count">2</span>
+            Корзина
+          </a>
+          <a href="#" class="header__btn header__btn_mob header__btn_lang">RUS</a>
+          <a href="#" class="header__btn header__btn_mob header__btn_geo"></a>
+          <a href="#" class="header__btn header__btn_mob header__btn_search"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
   <main class="main">
     <article class="main__container_card">
       <section class="main__section head head_desk">
-        <ul class="head-home__breadcrumbs breadcrumbs">
-          <li class="breadcrumbs__item">
-            Главная
-          </li>
-          <li class="breadcrumbs__item">
-            Бренды на «I»
-          </li>
-          <li class="breadcrumbs__item">
-            INFOLIO
-          </li>
-        </ul>
         <h1 class="head__title">
           INFOLIO Тетрадь на кольцах А5 на 120л клетка
         </h1>
@@ -71,52 +141,52 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide" slide-id="1">
                 <div class="swiper__slide">
-                  <img src="./img/1.1.png" alt="">
+                  <picture><source srcset="./img/1.1.webp" type="image/webp"><img src="./img/1.1.png" alt=""></picture>
                 </div>
               </div>
               <div class="swiper-slide" slide-id="2">
                 <div class="swiper__slide">
-                  <img src="./img/1.2.png" alt="">
+                  <picture><source srcset="./img/1.2.webp" type="image/webp"><img src="./img/1.2.png" alt=""></picture>
                 </div>
               </div>
               <div class="swiper-slide" slide-id="3">
                 <div class="swiper__slide">
-                  <img src="./img/1.3.png" alt="">
+                  <picture><source srcset="./img/1.3.webp" type="image/webp"><img src="./img/1.3.png" alt=""></picture>
                 </div>
               </div>
               <div class="swiper-slide" slide-id="4">
                 <div class="swiper__slide">
-                  <img src="./img/1.png" alt="">
+                  <picture><source srcset="./img/1.webp" type="image/webp"><img src="./img/1.png" alt=""></picture>
                 </div>
               </div>
               <div class="swiper-slide" slide-id="5">
                 <div class="swiper__slide">
-                  <img src="./img/01.png" alt="">
+                  <picture><source srcset="./img/01.webp" type="image/webp"><img src="./img/01.png" alt=""></picture>
                 </div>
               </div>
               <div class="swiper-slide" slide-id="6">
                 <div class="swiper__slide">
-                  <img src="./img/02.png" alt="">
+                  <picture><source srcset="./img/02.webp" type="image/webp"><img src="./img/02.png" alt=""></picture>
                 </div>
               </div>
               <div class="swiper-slide" slide-id="7">
                 <div class="swiper__slide">
-                  <img src="./img/03.png" alt="">
+                  <picture><source srcset="./img/03.webp" type="image/webp"><img src="./img/03.png" alt=""></picture>
                 </div>
               </div>
               <div class="swiper-slide" slide-id="8">
                 <div class="swiper__slide">
-                  <img src="./img/04.png" alt="">
+                  <picture><source srcset="./img/04.webp" type="image/webp"><img src="./img/04.png" alt=""></picture>
                 </div>
               </div>
               <div class="swiper-slide" slide-id="9">
                 <div class="swiper__slide">
-                  <img src="./img/05.png" alt="">
+                  <picture><source srcset="./img/05.webp" type="image/webp"><img src="./img/05.png" alt=""></picture>
                 </div>
               </div>
               <div class="swiper-slide" slide-id="10">
                 <div class="swiper__slide">
-                  <img src="./img/06.png" alt="">
+                  <picture><source srcset="./img/06.webp" type="image/webp"><img src="./img/06.png" alt=""></picture>
                 </div>
               </div>
             </div>
@@ -124,7 +194,7 @@
           <div class="swiper-button-next"></div>
           <div class="card-content__perview">
             <div class="slider-button-prev"></div>
-            <img src="./img/1.1.png" alt="">
+            <picture><source srcset="./img/1.1.webp" type="image/webp"><img src="./img/1.1.png" alt=""></picture>
             <div class="slider-button-next"></div>
           </div>
         </div>
@@ -148,13 +218,13 @@
             </div>
             <div class="details__models">
               <a href="#" class="details__link">
-                <img src="./img/2.png" alt="">
+                <picture><source srcset="./img/2.webp" type="image/webp"><img src="./img/2.png" alt=""></picture>
               </a>
               <a href="#" class="details__link">
-                <img src="./img/3.png" alt="">
+                <picture><source srcset="./img/3.webp" type="image/webp"><img src="./img/3.png" alt=""></picture>
               </a>
               <a href="#" class="details__link">
-                <img src="./img/4.png" alt="">
+                <picture><source srcset="./img/4.webp" type="image/webp"><img src="./img/4.png" alt=""></picture>
               </a>
             </div>
             <div class="details__btns-add">
@@ -237,9 +307,6 @@
                 14 дней на возврат
               </li>
             </ul>
-            <a href="/" class="details__logo">
-              <img src="./img/logo-w.jpg" alt="">
-            </a>
           </div>
         </div>
         <div class="card-content__box control">
@@ -265,11 +332,11 @@
                 История цены
               </span>
               <span class="control__range">
-                от <span>1 109</span> ₽ до <span>1 598</span> ₽
+                от 1 109 ₽ до 1 598 ₽
               </span>
             </div>
             <div class="control__diagram">
-              <img src="./img/edit_prices.png" alt="">
+              <picture><source srcset="./img/edit_prices.webp" type="image/webp"><img src="./img/edit_prices.png" alt=""></picture>
             </div>
           </div>
         </div>
@@ -542,7 +609,7 @@
                   </span>
                 </div>
                 <div class="company__logo">
-                  <img src="./img/logo-i.jpg" alt="">
+                  <picture><source srcset="./img/logo-i.webp" type="image/webp"><img src="./img/logo-i.jpg" alt=""></picture>
                 </div>
               </div>
               <ul class="company__statistics">
@@ -598,22 +665,22 @@
               <div class="swiper-wrapper similar__wrapper">
                 <div class="swiper-slide">
                   <div class="similar__slide">
-                    <img src="./img/1.png" alt="">
+                    <picture><source srcset="./img/1.webp" type="image/webp"><img src="./img/1.png" alt=""></picture>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="similar__slide">
-                    <img src="./img/2.png" alt="">
+                    <picture><source srcset="./img/2.webp" type="image/webp"><img src="./img/2.png" alt=""></picture>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="similar__slide">
-                    <img src="./img/3.png" alt="">
+                    <picture><source srcset="./img/3.webp" type="image/webp"><img src="./img/3.png" alt=""></picture>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="similar__slide">
-                    <img src="./img/4.png" alt="">
+                    <picture><source srcset="./img/4.webp" type="image/webp"><img src="./img/4.png" alt=""></picture>
                   </div>
                 </div>
               </div>
@@ -625,7 +692,184 @@
     </article>
     <button class="main__chat-btn"></button>
   </main>
-@@include('html/footer.html',{})
+<footer class="footer">
+  <div class="footer__container">
+    <ul class="footer__list">
+      <li class="footer__subtitle">
+        Покупателям
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          Как сделать заказ
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          Способы оплаты
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          Доставка
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          Возврат товара
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          Возврат денежных средств
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          Правила продажи
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="info.html" class="footer__link">
+          Правила пользования торговой площадкой
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          Вопросы и ответы
+        </a>
+      </li>
+    </ul>
+    <ul class="footer__list">
+      <li class="footer__subtitle">
+        Партнерам
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          Продавайте на Wildberries
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          Перевозчикам
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          Партнерский пункт выдачи
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          Франшизный пункт выдачи
+        </a>
+      </li>
+    </ul>
+    <ul class="footer__list">
+      <li class="footer__subtitle">
+        Наши проекты
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          WB Guru
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          Трудоустройство
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          Цифровые товары
+        </a>
+      </li>
+    </ul>
+    <ul class="footer__list">
+      <li class="footer__subtitle">
+        Компания
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          О нас
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          Реквизиты
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          Пресс-центр
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          Контакты
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          Bug Bounty
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          WB.Tech
+        </a>
+      </li>
+    </ul>
+    <ul class="footer__list">
+      <li class="footer__subtitle">
+        Мы в соцсетях
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          Вконтакте
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          Одноклассники
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          YouTube
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          Телеграм
+        </a>
+      </li>
+    </ul>
+    <ul class="footer__list">
+      <li class="footer__subtitle">
+        Мобильные устройства
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          <picture><source srcset="../img/google_play.webp" type="image/webp"><img src="../img/google_play.png" alt=""></picture>
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          <picture><source srcset="../img/app_store.webp" type="image/webp"><img src="../img/app_store.png" alt=""></picture>
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          <picture><source srcset="../img/app_gallery.webp" type="image/webp"><img src="../img/app_gallery.png" alt=""></picture>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="footer__copyright">
+    2004-2022 © Wildberries — модный интернет-магазин одежды, обуви и аксессуаров. Все права защищены. Доставка по всей России. 
+  </div>
+</footer>
+<script src="./js/app.min.js?_v=20221122153129"></script>
 </body>
 
 </html>
