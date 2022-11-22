@@ -322,3 +322,39 @@ if (document.querySelector('.main__up-btn')) {
     });
   });
 }
+//Кнопка раскрыть скрыть товары в корзине
+if(document.querySelector('.products')) {
+  const sectionProd = document.querySelector('.products');
+  const closeBtnProd = sectionProd.querySelector('.products__btn');
+  const positionsCart = sectionProd.querySelectorAll('.position');
+  const headCart = sectionProd.querySelector('.products__head');
+  const miniCheck = headCart.querySelector('.products__list_close');
+  let heightList;
+
+  const showCartList = () => {
+    heightList = 0;
+    for (let i = 0; i < positionsCart.length; i++) {
+      heightList += positionsCart[i].clientHeight;
+    }
+    heightList += 178;
+    sectionProd.style.height = `${heightList}px`;
+    closeBtnProd.classList.remove('--active');
+    headCart.removeAttribute('style');
+    miniCheck.classList.remove('--active');
+  };
+
+  const hideCartList = () => {
+    sectionProd.style.height = '105px';
+    closeBtnProd.classList.add('--active');
+    headCart.style.borderBottom = 'none';
+    miniCheck.classList.add('--active');
+  };
+
+  closeBtnProd.addEventListener('click', () => {
+    if (closeBtnProd.classList.contains('--active')) {
+      showCartList();
+    } else {
+      hideCartList();
+    }
+  });
+}
