@@ -11,16 +11,16 @@ $minWidth: 320;
 $maxWidth: 1920;
 
 // Ширина ограничивающего контейнера (0 = нет ограничения)
-$maxWidthContainer: 1400;
+$maxWidthContainer: 1504;
 
 // Общий отступ у контейнера
 // (30 = по 15px слева и справа, 0 = нет отступа)
-$containerPadding: 30;
+$containerPadding: 40;
 
 // Тип адаптива:
 // 1 = отзывчивость (у контейнера нет брейкпоинтов),
 // 2 = по брейк-поинтам (контейнер меняет свою ширину по брейк-поинтам)
-$responsiveType: 2;
+$responsiveType: 1;
 
 // Ширина страбатывания первого брейкпоинта
 $containerWidth: $maxWidthContainer + $containerPadding;
@@ -35,6 +35,8 @@ $transFill: fill .1s ease;
 $transStroke: stroke .1s ease;
 $transTransform: transform .3s ease,
                   left .3s ease,
-                  right .3s ease;
+                  right .3s ease,
+                  top .3s ease,
+                  bottom .3s ease;
 $transBorder: border .2s ease;
 $transOpacity: opacity .3s linear;

@@ -1,0 +1,107 @@
+.accordeon__item{
+  height: 90px;
+  margin-bottom: -1px;
+  overflow: hidden;
+  transition: height .3s linear;
+}
+.accordeon__title{
+  position: relative;
+  padding: 34px 0;
+  border-top: 1px solid #A1A6B4;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000;
+  cursor: pointer;
+}
+.accordeon__title::after{
+  position: absolute;
+  right: 3px;
+  top: 18px;
+  content: url(../icons/circle-arrow-down.svg);
+  transition: transform .2s linear;
+}
+.accordeon__text{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 20px;
+  // visibility: hidden;
+  border-top: 1px solid #A1A6B4;
+  transition: visibility .3s linear;
+}
+.accordeon__art-name{
+  flex-basis: 25%;
+  margin-bottom: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000;
+  cursor: pointer;
+  transition: color .2s linear;
+}
+.accordeon__title.accordeon__title-active::after{
+  transform: rotate(180deg);
+}
+.item-active{
+  height: 263px;
+}
+.card-active{
+  opacity: 1;
+  z-index: 10;
+}
+.accordeon-compression{
+  width: 60%;
+}
+.art-active{
+  color: #AA9DFA;
+}
+.modal-active{
+  opacity: 1;
+  visibility: visible;
+}
+.select-active{
+  visibility: visible;
+  height: 149px;
+}
+
+.accordeon{
+  counter-reset: count;
+
+  &__title{
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    &::before{
+      margin-right: 5px;
+      counter-increment: count;
+      content: counter(count)'.';
+    }
+  }
+
+  &__text{
+    counter-reset: number;
+
+    & li{
+      position: relative;
+      padding-left: 40px;
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 400;
+      &::before{
+        position: absolute;
+        left: 0;
+        margin-right: 5px;
+        counter-increment: number;
+        content: counter(count)'.'counter(number)'.';
+      }
+
+      &:not(:last-child){
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+}

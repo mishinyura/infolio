@@ -12,7 +12,7 @@
 		"svgSprive": "gulp svgSpriteTask",
 		"test": "eslint"
 	},
-	"author": "nasekinid",
+	"author": "mishinyura",
 	"license": "MIT",
 	"dependencies": {
 		"curtainsjs": "^8.1.3",

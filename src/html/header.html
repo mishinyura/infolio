@@ -1,116 +1,68 @@
 <header class="header">
   <div class="header__container">
-    <nav class="header__nav nav">
-      <button class="nav__burger">
-        <span class="nav__icon"></span>
-      </button>
-      <div class="nav__menu">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#" class="nav__link">
-              Ссылка
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">
-              Ссылка
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">
-              Ссылка
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">
-              Ссылка
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">
-              Ссылка
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">
-              Ссылка
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">
-              Ссылка
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">
-              Ссылка
-            </a>
-          </li>
-        </ul>
-        <button class="nav__close"></button>
-      </div>
-    </nav>
-    <div class="header__content">
-      <a href="/" class="header__logo">
-        <img src="../img/logo.png" alt="Логотип Infolio">
-      </a>
-      <div class="header__btns">
-        <a href="#" class="header__btn">
-          <span class="header__icon">
-            <svg version="1.1" width="40" height="40" fill="white" stroke="white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100.353 100.352" style="enable-background:new 0 0 100.353 100.352;" xml:space="preserve">
-              <path d="M58.23,69.992l14.993-24.108c0.049-0.078,0.09-0.16,0.122-0.245c2.589-4.222,3.956-9.045,3.956-13.969
-                c0-14.772-12.018-26.79-26.79-26.79S23.72,16.898,23.72,31.67c0,4.925,1.369,9.75,3.96,13.975c0.03,0.074,0.065,0.146,0.107,0.216
-                l14.455,24.191c-11.221,1.586-18.6,6.2-18.6,11.797c0,6.935,11.785,12.366,26.829,12.366S77.3,88.783,77.3,81.849
-                C77.301,76.226,69.578,71.509,58.23,69.992z M30.373,44.294c-2.39-3.804-3.653-8.169-3.653-12.624
-                c0-13.118,10.672-23.79,23.791-23.79c13.118,0,23.79,10.672,23.79,23.79c0,4.457-1.263,8.822-3.652,12.624
-                c-0.05,0.08-0.091,0.163-0.124,0.249L54.685,70.01c-0.238,0.365-0.285,0.448-0.576,0.926l-4,6.432L30.507,44.564
-                C30.472,44.471,30.427,44.38,30.373,44.294z M50.472,91.215c-14.043,0-23.829-4.937-23.829-9.366c0-4.02,7.37-7.808,17.283-8.981
-                l4.87,8.151c0.269,0.449,0.751,0.726,1.274,0.73c0.004,0,0.009,0,0.013,0c0.518,0,1-0.268,1.274-0.708l5.12-8.232
-                C66.548,73.9,74.3,77.784,74.3,81.849C74.301,86.279,64.515,91.215,50.472,91.215z"/>
-              <path d="M60.213,31.67c0-5.371-4.37-9.741-9.741-9.741s-9.741,4.37-9.741,9.741s4.37,9.741,9.741,9.741
-                C55.843,41.411,60.213,37.041,60.213,31.67z M43.731,31.67c0-3.717,3.024-6.741,6.741-6.741s6.741,3.024,6.741,6.741
-                s-3.023,6.741-6.741,6.741S43.731,35.387,43.731,31.67z"/>
-            </svg>
-          </span>
-          <span class="header__btn-text">
+    <div class="header__head">
+      <span class="header__lang">
+        RUB
+      </span>
+      <span class="header__geo">
+        Москва
+      </span>
+      <span class="header__tag">
+        Продавайте на Wildberries
+      </span>
+      <span class="header__tag header__tag_orange">
+        Работа в Wildberries
+      </span>
+    </div>
+    <div class="header__body">
+      <nav class="header__nav nav">
+        <a href="/" class="nav__burger">
+          <span class="nav__icon"></span>
+        </a>
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link"></a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link"></a>
+            </li>
+            <li class="nav__item">
+              <a href="cart.html" class="nav__link">
+                <span class="header__count">2</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link"></a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link"></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="header__content">
+        <a href="/" class="header__logo">
+          <img src="../img/logo.png" alt="Логотип Infolio">
+        </a>
+        <label class="header__search">
+          <input type="text" class="header__input" placeholder="Я ищу">
+        </label>
+        <div class="header__btns">
+          <a href="#" class="header__btn header__btn_desk">
             Адреса
-          </span>
-        </a>
-        <a href="#" class="header__btn">
-          <span class="header__icon">
-            <svg version="1.1" width="40" height="40" xmlns="http://www.w3.org/2000/svg" fill="white" stroke="white" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100.353 100.353" style="enable-background:new 0 0 100.353 100.353;" xml:space="preserve">
-              <path d="M51.775,54.264C31.718,54.264,15.4,71.193,15.4,92c0,0.828,0.671,1.5,1.5,1.5h69.75c0.828,0,1.5-0.672,1.5-1.5
-                C88.15,71.193,71.833,54.264,51.775,54.264z M18.431,90.5c0.757-18.46,15.424-33.236,33.345-33.236
-                c17.92,0,32.587,14.776,33.345,33.236H18.431z"/>
-              <path d="M51.146,50.142c11.568,0,20.98-9.74,20.98-21.713S62.715,6.716,51.146,6.716s-20.979,9.74-20.979,21.713
-                S39.578,50.142,51.146,50.142z M51.146,9.716c9.914,0,17.98,8.395,17.98,18.713s-8.066,18.713-17.98,18.713
-                s-17.979-8.395-17.979-18.713S41.232,9.716,51.146,9.716z"/>
-            </svg>
-          </span>
-          <span class="header__btn-text">
+          </a>
+          <a href="#" class="header__btn header__btn_desk">
             Войти
-          </span>
-        </a>
-        <a href="../cart.html" class="header__btn">
-          <span class="header__icon">
-            <svg version="1.1" width="40" height="40" fill="white" stroke="white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100.353 100.353" style="enable-background:new 0 0 100.353 100.353;" xml:space="preserve">
-            <path d="M94.224,18.366c-0.284-0.332-0.7-0.523-1.138-0.523H22.308l-2.886-9.672C19.231,7.535,18.647,7.1,17.984,7.1H6.915
-              c-0.829,0-1.5,0.671-1.5,1.5s0.671,1.5,1.5,1.5h9.951l18.234,61.104c0.002,0.007,0.008,0.013,0.01,0.02l2.265,7.704
-              c-1.43,1.421-2.316,3.388-2.316,5.557c0,4.33,3.521,7.853,7.848,7.853c4.188,0,7.609-3.308,7.82-7.451h19.659
-              c-0.001,0.055-0.008,0.109-0.008,0.165c0,4.326,3.519,7.846,7.844,7.846s7.845-3.52,7.845-7.846s-3.52-7.846-7.845-7.846
-              c-3.199,0-5.952,1.928-7.171,4.681H50.299c-0.384-1.095-1.003-2.102-1.848-2.947c-1.481-1.481-3.449-2.298-5.541-2.298
-              c-0.001,0-0.002,0-0.002,0c-1.029,0-2.01,0.204-2.911,0.566l-1.45-4.933h46.673c0.741,0,1.371-0.541,1.482-1.273l7.867-51.433
-              C94.635,19.137,94.509,18.698,94.224,18.366z M78.222,80.207c2.671,0,4.845,2.174,4.845,4.846s-2.174,4.846-4.845,4.846
-              s-4.844-2.174-4.844-4.846S75.551,80.207,78.222,80.207z M42.908,79.643c0,0,0.001,0,0.001,0c1.291,0,2.505,0.504,3.419,1.419
-              c0.915,0.915,1.418,2.132,1.418,3.425c0,2.676-2.171,4.853-4.84,4.853c-2.673,0-4.848-2.177-4.848-4.853
-              C38.059,81.816,40.234,79.643,42.908,79.643z M83.931,69.276H37.664l-2.836-9.648c-0.036-0.122-0.09-0.233-0.152-0.338
-              L23.203,20.843h68.136L83.931,69.276z"/>
-            </svg>
-          </span>
-          <span class="header__btn-text">
+          </a>
+          <a href="../cart.html" class="header__btn header__btn_desk">
+            <span class="header__count">2</span>
             Корзина
-          </span>
-        </a>
+          </a>
+          <a href="#" class="header__btn header__btn_mob header__btn_lang">RUS</a>
+          <a href="#" class="header__btn header__btn_mob header__btn_geo"></a>
+          <a href="#" class="header__btn header__btn_mob header__btn_search"></a>
+        </div>
       </div>
     </div>
   </div>
