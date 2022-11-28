@@ -15,8 +15,11 @@ export const js = () => {
         maxEntrypointSize: 512000,
         maxAssetSize: 512000
       },
+			optimization: {
+				minimize: false,
+			},
       output: {
-				filename: 'app.min.js',
+				filename: 'app.js',
 			}
 		}))
 		.pipe(app.gulp.dest(app.path.build.js))
