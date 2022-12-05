@@ -10,6 +10,7 @@ class select {
     this.itemClass = '-select__item-';
     this.btnClass = '-select__btn-';
     this.classActive = '--active';
+    this.inputSelect = this.box.querySelector('input');
   }
 
   createShape() {
@@ -56,6 +57,7 @@ class select {
 
   //Функция сработает при выборе нового элемента из списка
   clickItem(item, index) {
+    this.inputSelect.value = item.target.innerHTML;
     this.item[this.positionSelect].removeAttribute('style');
     this.btn.innerText = item.target.innerText;
     this.positionSelect = index;
