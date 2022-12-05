@@ -29,7 +29,6 @@ class select {
       this.item[i].setAttribute('tabindex', '0');
       this.amountItems++;
     }
-    this.box.insertAdjacentHTML('afterbegin', this.input.outerHTML);
     //Добавление классов контейнеру с селектом, контейнеру с вариантами,
     //добавление атрибута tabindex для кнопки(выбранного элемента)
     this.box.classList.add(this.boxClass);
