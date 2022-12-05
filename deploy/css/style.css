@@ -3694,11 +3694,11 @@ html {
   font-weight: 400;
 }
 
-.footer_form::before{
+.body__form .footer::before{
   background-color:rgb(237, 237, 237)
 }
 
-.header_form::after{
+.body__form .header::after{
   background-color:rgb(237, 237, 237)
 }
 

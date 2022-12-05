@@ -9,25 +9,18 @@ class select {
     this.listClass = '-select__list-';
     this.itemClass = '-select__item-';
     this.btnClass = '-select__btn-';
-    // this.scrollbarClass = '-select__scrollbar-';
     this.classActive = '--active';
-    this.inputsName = classObj;
   }
 
   createShape() {
     //Создается input, присваивается класс, type, name
     //и добавляется как дочерний элемент box в начало контейнера.
     //В него будет передаваться выбранное значение для дальнейшего использования
-    this.input = document.createElement('input');
-    this.input.setAttribute('type', 'hidden');
-    this.input.setAttribute('name', this.inputsName);
     if (this.defaultSelection) {
       this.positionSelect = this.defaultSelection - 1;
       this.btn.innerText = this.item[this.positionSelect].innerText;
-      this.input.value = this.item[this.positionSelect].innerText;
       this.item[this.positionSelect].style.display = 'none';
     } else {
-      this.input.value = '';
       this.btn.innerText = this.placeholder;
       this.positionSelect = 0;
     }
@@ -36,7 +29,6 @@ class select {
       this.item[i].setAttribute('tabindex', '0');
       this.amountItems++;
     }
-    this.box.insertAdjacentHTML('afterbegin', this.input.outerHTML);
     //Добавление классов контейнеру с селектом, контейнеру с вариантами,
     //добавление атрибута tabindex для кнопки(выбранного элемента)
     this.box.classList.add(this.boxClass);
@@ -51,13 +43,11 @@ class select {
   }
 
   closeSelect() {
-    console.log('C')
     this.btn.classList.remove(this.classActive);
     this.list.removeAttribute('style');
   }
 
   openSelect() {
-    console.log('O')
     this.btn.classList.add(this.classActive);
     this.list.style.height = `${this.sizeList}px`;
     this.list.style.paddingTop = `${this.heightBtn}px`;
@@ -69,7 +59,6 @@ class select {
     this.item[this.positionSelect].removeAttribute('style');
     this.btn.innerText = item.target.innerText;
     this.positionSelect = index;
-    this.input.value = item.target.innerText;
     this.item[index].style.backgroundColor = '#c3c3c3';
     this.closeSelect();
   }
@@ -86,13 +75,11 @@ class select {
     //При клике за пределы селекта, селект закроется
     document.addEventListener( 'click', (e) => {
       if (!e.composedPath().includes(this.btn)) {
-        console.log('За пределы клик')
         this.closeSelect();
       }
     });
     //При клике на выбранные эелемент (title, btn)
     this.btn.addEventListener('click', () => {
-      console.log('На кноку клик')
       if (this.btn.classList.contains(this.classActive)) {
         this.closeSelect();
       } else {
@@ -102,7 +89,6 @@ class select {
     //При клике на элемент списка, заголовок/btn, обновится
     for (let i = 0; i < this.item.length; i++) {
       this.item[i].addEventListener('click', (item) => {
-        console.log('На элемент списка клик')
         this.clickItem(item, i);
       });
     }
