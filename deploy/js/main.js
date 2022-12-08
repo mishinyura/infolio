@@ -649,3 +649,14 @@ if (document.querySelector('.btn-list')) {
     });
   }
 }
+
+if (document.querySelector('.headcart')) {
+  const headcart = document.querySelector('.headcart');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 850) {
+      headcart.classList.add('active');
+    } else {
+      headcart.classList.remove('active');
+    }
+  });
+}
